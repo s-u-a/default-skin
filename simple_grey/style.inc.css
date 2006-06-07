@@ -59,7 +59,7 @@ kbd { font:inherit; text-decoration:underline; }
 #content-11 h2 { margin:0; padding:.1em; border-bottom:.1em solid #aaa; text-align:center; background-color:#888; font-weight:700; position:relative; }
 /* IE the faster browser? Definitely not, just check out the size of that crappy
 unnecessary code that's only here to satisfy IE. */
-#content-13 h3,#content-12 #content-13 .desc-prod h3,#content-12 #content-13 .desc-values h3,#content-12 .nachricht-informationen h4 { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; font-weight:700; }
+#content-13 h3,#content-12 #content-13 .desc-prod h3,#content-12 #content-13 .desc-values h3,#content-12 .nachricht-informationen h3,#content-12 .nachricht-informationen h4 { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; font-weight:700; }
 #content-13 * h3 { border-bottom-style:none; background-color:transparent; padding:0; text-align:left; }
 * html h3 { position:relative; }
 
