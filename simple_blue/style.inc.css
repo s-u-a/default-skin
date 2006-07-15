@@ -9,7 +9,7 @@
 	,.deps .c-item,.deps td,.buendnis-informationen li,.playerinfo-planeten li,.queue,.queue li,.queue .restbauzeit,.nachrichten-kategorien dd.c-postausgang,.nachrichten-kategorien dd.c-gesamt,.nachricht-kampf p.keine,.nachrichten-verbuendeten-links li.c-verbuendete,.flotte-anzahl
 	,.flotte-versenden .flotte-schiffe dd,.flotte-versenden-2 dl,.flotte-versenden-2 dt,.flotte-versenden-2 dd,.flotte-versandt dl,.flotte-versandt dt,.flotte-versandt dd,#planets li,#planets li.active,* html #planets li.active,#flotten dt,#flotten dd,.buendnisse-liste ul li
 	,.allianz-laufende-bewerbungen ul li,.buendnisse,.allianz-laufende-bewerbungen,#js-title,#loading,.handelsrechner-handelskurs dl dt,.changelog,.changelog li,.planeten-reihenfolge li,.shortcuts-verwalten li,.allianz-moeglichkeiten,.allianz-bewerben,.allianz-suchergebnisse
-	,.imperium-tabelle th.c-planet,.imperium-tabelle th.c-einheit,.imperium-tabelle .c-gesamt,.imperium-rohstoffproduktion .c-gesamt,.imperium-modi li,.highscores-modi li,.alle-abbrechen,select,option,textarea,input,button,.popup { border-color:#679; }
+	,.imperium-tabelle th.c-planet,.imperium-tabelle th.c-einheit,.imperium-tabelle .c-gesamt,.imperium-rohstoffproduktion .c-gesamt,.imperium-modi li,.highscores-modi li,.alle-abbrechen,select,option,textarea,input,button,.popup,#css-3,.allianz-aktionen { border-color:#679; }
 
 #navigation { border-color:#568; }
 #navigation li { border-color:#568; }
