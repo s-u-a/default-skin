@@ -106,6 +106,8 @@ dt { width:30%; float:left; margin:0; padding:.2em .3em; font-weight:700; positi
 dt:after { content:":\a0"; }
 dd { margin:0; padding:.2em .3em .2em 32%; text-align:left; border-bottom:.1em solid #aaa; }
 hr { height:0; padding:0; border-style:solid none none none; border-width:.2em; border-color:#aaa; }
+hr.separator { display:none; }
+.cross-navigation { display:none; }
 strong { font-weight:700; font-style:normal; text-decoration:none; }
 em { font-weight:400; font-style:normal; text-decoration:underline; }
 h1 em,h2 em,h3 em { font-weight:inherit; text-decoration:none; }
