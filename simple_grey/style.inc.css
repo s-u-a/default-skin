@@ -79,6 +79,7 @@ form div input[type=submit],form div input[type=reset],form div input[type=butto
 textarea { max-width:100%; }
 abbr,acronym { border-style:none; text-decoration:none; font-style:normal; letter-spacing:inherit; }
 
+p { text-align:justify; }
 .error { color:#f00; font-weight:700; text-align:center; font-size:1.2em; }
 .successful,.flotte-versandt p { color:#0f0; font-weight:700; text-align:center; font-size:1.2em; }
 .nothingtodo { color:#8bf; font-weight:700; text-align:center; font-size:1.2em; }
@@ -270,7 +271,7 @@ p { margin:.5em; }
 
 .weitergeleitete-nachricht { text-align:center; }
 
-p.neue-nachrichten { font-weight:700; margin:0; padding:.5em; }
+p.neue-nachrichten { font-weight:700; margin:0; padding:.5em; text-align:center; }
 
 .nachricht-antworten-formular,.nachricht-loeschen-formular { display:inline; margin:0; padding:0; }
 .nachricht-antworten-formular div,.nachricht-loeschen-formular div { display:inline; }
