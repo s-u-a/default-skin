@@ -160,6 +160,8 @@ p { margin:.5em; }
 .unbeschaeftigte-planeten .c-naechster a:before { content:"Fastbuild\a0"; }
 .ungelesene-nachrichten .c-naechste a:before { content:"Fastread\a0"; }
 
+.platz strong,strong.gesamt-spieler { font-weight:inherit; }
+
 .highscores-seiten { list-style-type:none; margin:0; padding:0; font-weight:700; }
 .highscores-seiten li.c-naechste { position:absolute; top:0; right:0; vertical-align:middle; font-size:.8em; }
 .highscores-seiten li.c-vorige { position:absolute; top:0; left:0; vertical-align:middle; font-size:.8em; }
