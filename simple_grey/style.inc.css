@@ -282,6 +282,10 @@ p.neue-nachrichten { font-weight:700; margin:0; padding:.5em; text-align:center;
 .nachrichten-verbuendeten-links li { display:inline; padding:.2em .3em; }
 .nachrichten-verbuendeten-links li.c-verbuendete { border-right:.1em solid #aaa; }
 
+fieldset.flotte-koords { float:left; width:48%; }
+fieldset.buendnisflug { width:48%; }
+fieldset.flotte-schiffe { clear:left; }
+
 .flotte-anzahl { font-weight:700; margin:.5em; padding:.5em; border:.1em solid #aaa; }
 .flotte-anzahl.voll { color:#f00; }
 .flotte-versenden fieldset { padding:0; }
@@ -355,17 +359,17 @@ h2#punkte { clear:right; }
 #flotten dt.rueckflug.eigen { color:#0b0; }
 #flotten dt.fremd.type-4 { color:#0cf; }
 #flotten dt.fremd.type-3,#flotten dt.fremd.type-5 { color:#f00; }
-#flotten .beschreibung,#flotten .handel a { color:#fff; }
+#flotten .beschreibung,#flotten .handel a,#flotten .buendnisangriff a { color:#fff; }
 #flotten .beschreibung { cursor:help; }
 #flotten .rueckflug .beschreibung { color:#bbb; }
-#flotten .beschreibung:hover,#flotten .handel a:hover,#flotten .handel a:focus { color:#ccc; }
+#flotten .beschreibung:hover,#flotten .handel a:hover,#flotten .handel a:focus,#flotten .buendnisangriff a:hover,#flotten .buendnisangriff a:focus { color:#ccc; }
 #flotten .rueckflug .beschreibung:hover { color:#aaa; }
 #flotten .beschreibung[class],#flotten .beschreibung[class]:hover,#flotten .rueckflug .beschreibung[class]:hover { color:inherit; cursor:inherit; }
 #flotten .beschreibung[title],#flotten .beschreibung[titleAttribute] { color:#fff; cursor:help; }
 #flotten .rueckflug .beschreibung[title],#flotten .rueckflug .beschreibung[titleAttribute] { color:#bbb; }
 #flotten .beschreibung[title]:hover,#flotten .beschreibung[titleAttribute]:hover { color:#ccc; }
 #flotten .rueckflug .beschreibung[title]:hover,#flotten .rueckflug .beschreibung[titleAttribute]:hover { color:#aaa; }
-#flotten .handel { text-align:center; }
+#flotten .handel,#flotten .buendnisangriff { text-align:center; }
 
 .highscores { width:50%; font-weight:700; }
 .highscores td,.highscores th { padding:.1em .3em; }
