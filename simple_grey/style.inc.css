@@ -477,6 +477,8 @@ br.clear { clear:both; }
 .imperium-modi a,.highscores-modi a { display:block; }
 .imperium-modi a:hover,.imperium-modi a:focus,.highscores-modi a:hover,.highscores-modi a:focus { background-color:#aaa; }
 .imperium-modi .active a,.highscores-modi .active a { background-color:#999; }
+.highscores-modi { height:5em; }
+.highscores-modi li.c-spieler-gebaeude,.highscores-modi li.c-spieler-forschung,.highscores-modi li.c-spieler-roboter,.highscores-modi li.c-spieler-schiffe,.highscores-modi li.c-spieler-verteidigung { width:19.5%; white-space:nowrap; }
 
 .allianz-bewerben-form dt,.allianz-gruenden-form dt,.allianz-intern-form dt,.allianz-extern-form dt { position:relative; }
 
