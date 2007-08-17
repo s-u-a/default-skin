@@ -360,7 +360,7 @@ h2#punkte { clear:right; }
 #planeten { clear:left; }
 #flotten dt.hinflug.eigen { color:#0f0; }
 #flotten dt.rueckflug.eigen { color:#0b0; }
-#flotten dt.fremd.type-4 { color:#0cf; }
+#flotten dt.fremd.type-4,#flotten dt.fremd.type-6 { color:#0cf; }
 #flotten dt.fremd.type-3,#flotten dt.fremd.type-5 { color:#f00; }
 #flotten .beschreibung,#flotten .handel a,#flotten .buendnisangriff a { color:#fff; }
 #flotten .beschreibung { cursor:help; }
