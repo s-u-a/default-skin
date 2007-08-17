@@ -107,6 +107,8 @@ dl { width:100%; margin:0; padding:0; border:.1em solid #aaa; border-bottom-styl
 dt { width:30%; float:left; margin:0; padding:.2em .3em; font-weight:700; position:relative; border-right:.1em solid #aaa; text-align:left; }
 dt:after { content:":\a0"; }
 dd { margin:0; padding:.2em .3em .2em 32%; text-align:left; border-bottom:.1em solid #aaa; }
+.item-list dt { width:60%; }
+.item-list dd { padding-left:62%; }
 hr { height:0; padding:0; border-style:solid none none none; border-width:.2em; border-color:#aaa; }
 hr.separator { display:none; }
 .cross-navigation { display:none; }
