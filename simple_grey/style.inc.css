@@ -121,11 +121,11 @@ p { margin:.5em; }
 #planeten-umbenennen a:before { content:"("; }
 #planeten-umbenennen a:after { content:")"; }
 
-#content-1 .ress dt,#content-1 .ress dd { display:inline; }
-#content-1 .ress dt:after { content:":\a0"; word-spacing:-1.1em; }
-#content-1 .ress dd { font-weight:bold; white-space:nowrap; }
-#content-1 .ress dd:after { content:",\a0"; font-weight:400; }
-#content-1 .ress dd.ress-last:after { content:"\0a"; white-space:pre; }
+#content-10 .ress dt,#content-10 .ress dd { display:inline; }
+#content-10 .ress dt:after { content:":\a0"; word-spacing:-1.1em; }
+#content-10 .ress dd { font-weight:bold; white-space:nowrap; }
+#content-10 .ress dd:after { content:",\a0"; font-weight:400; }
+#content-10 .ress dd.ress-last:after { content:"\0a"; white-space:pre; }
 
 .item { border-color:#aaa; border-style:none; border-width:.1em; padding:.5em; text-align:left; clear:right; position:relative; }
 * html .item { height:1%; }
