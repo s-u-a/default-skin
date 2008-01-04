@@ -497,3 +497,320 @@ br.clear { clear:both; }
 .autocomplete li { cursor:pointer; padding:0 2px; }
 .autocomplete li.selected { background-color:Highlight; color:HighlightText; }
 * html form { position:relative; }
+
+/* Resource bar: fixed */
+
+body { padding:3.5em 1em 3.5em 12em; }
+* html,* html body { padding:0; margin:0; overflow-y:hidden; }
+
+body.mit-werbung.skin-1-0 #content-10,* html body.skin-1-0 #content-10 { margin-right:120px; }
+body.mit-werbung.skin-1-0 #content-9,* html body.skin-1-0 #content-9 { margin-right:1em; }
+
+body.skin-1-0 #time { position:fixed; right:0; border-left:.2em solid #aaa; }
+body.skin-1-0 #ress { position:fixed; }
+body.skin-1-0 #navigation { position:fixed; top:3.5em; left:1em; width:10em; }
+body.skin-1-0 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+
+body.skin-1-0 #content-13 { position:relative; }
+
+* html body.skin-1-0 #time { position:absolute; left:0; right:auto; border-left-style:none; border-right:.2em solid #aaa; }
+* html body.skin-1-0 #ress { position:absolute; right:auto; }
+
+* html body.skin-1-0 #navigation { position:absolute; top:3.5em; left:1em; width:10em;  }
+* html body.skin-1-0 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+
+* html body.skin-1-0 #content-10 { position:absolute; top:0; left:0; bottom:0; right:0; overflow:auto; height:100%; width:100%; padding-top:3.6em; padding-left:12em; padding-right:120px; text-align:center; }
+* html body.skin-1-0 #content-11 { margin:2.6em 0 0 0; padding:1.1em 0 3.6em 0; width:100%; }
+* html body.skin-1-0 #content-12 { text-align:left; position:relative; }
+* html body.skin-1-0 #version { right:20px; z-index:40000; }
+
+/* Resource bar: scrolling */
+
+body.mit-werbung.skin-1-1 #content-9,* html body.skin-1-1 #content-9 { margin-right:120px; }
+body.mit-werbung.skin-1-1 #content-8 { margin-right:1em; }
+
+body.skin-1-1 #time { position:fixed; right:0; border-left:.2em solid #aaa; }
+body.skin-1-1 #ress { position:absolute; }
+body.skin-1-1 #navigation { position:fixed; top:3.5em; left:1em; width:10em; }
+body.skin-1-1 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+
+body.skin-1-1 #content-13 { position:relative; }
+
+* html body.skin-1-1 #time { position:absolute; left:0; right:auto; border-left-style:none; border-right:.2em solid #aaa; }
+* html body.skin-1-1 #ress { position:absolute; right:auto; }
+
+* html body.skin-1-1 #navigation { position:absolute; top:3.5em; left:1em; width:10em;  }
+* html body.skin-1-1 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+
+* html body.skin-1-1 #content-9 { position:absolute; top:0; left:0; bottom:0; right:0; overflow:auto; height:100%; width:100%; padding-top:3.6em; padding-left:12em; padding-right:120px; }
+* html body.skin-1-1 #content-10 { margin:2.6em 0 0 0; padding:1.1em 0 3.6em 0; }
+* html body.skin-1-1 #content-11 { margin-right:2em; text-align:center; position:relative; }
+* html body.skin-1-1 #content-12 { position:relative; }
+
+* html body.skin-1-1 #version { right:20px; z-index:40000; }
+
+/* Graphics: on */
+
+body.skin-2-0 #planets { padding:0 0 250px 0 !important; }
+* html body.skin-2-0 #planets { padding:0 !important; }
+
+body.skin-2-0 #planets li { background-repeat:no-repeat; background-position:right center; min-height:50px; padding:.2em 1ex; }
+* html body.skin-2-0 #planets li { height:50px; }
+body.skin-2-0 #planets .planet-1 { background-image:url(images/planets_small/planet01.png); }
+body.skin-2-0 #planets .planet-2 { background-image:url(images/planets_small/planet02.png); }
+body.skin-2-0 #planets .planet-3 { background-image:url(images/planets_small/planet03.png); }
+body.skin-2-0 #planets .planet-4 { background-image:url(images/planets_small/planet04.png); }
+body.skin-2-0 #planets .planet-5 { background-image:url(images/planets_small/planet05.png); }
+body.skin-2-0 #planets .planet-6 { background-image:url(images/planets_small/planet06.png); }
+body.skin-2-0 #planets .planet-7 { background-image:url(images/planets_small/planet07.png); }
+body.skin-2-0 #planets .planet-8 { background-image:url(images/planets_small/planet08.png); }
+body.skin-2-0 #planets .planet-9 { background-image:url(images/planets_small/planet09.png); }
+body.skin-2-0 #planets .planet-10 { background-image:url(images/planets_small/planet10.png); }
+body.skin-2-0 #planets .planet-11 { background-image:url(images/planets_small/planet11.png); }
+body.skin-2-0 #planets .planet-12 { background-image:url(images/planets_small/planet12.png); }
+body.skin-2-0 #planets .planet-13 { background-image:url(images/planets_small/planet13.png); }
+body.skin-2-0 #planets .planet-14 { background-image:url(images/planets_small/planet14.png); }
+body.skin-2-0 #planets .planet-15 { background-image:url(images/planets_small/planet15.png); }
+body.skin-2-0 #planets .planet-16 { background-image:url(images/planets_small/planet16.png); }
+body.skin-2-0 #planets .planet-17 { background-image:url(images/planets_small/planet17.png); }
+body.skin-2-0 #planets .planet-18 { background-image:url(images/planets_small/planet18.png); }
+body.skin-2-0 #planets .planet-19 { background-image:url(images/planets_small/planet19.png); }
+body.skin-2-0 #planets .planet-20 { background-image:url(images/planets_small/planet20.png); }
+
+body.skin-2-0 #planets .active,body.skin-2-0 #spionage-planet dl { background-repeat:no-repeat; background-position:center top; padding:250px 0 0 0 !important; }
+body.skin-2-0 .planet-1 #planets .active,body.skin-2-0 #spionage-planet dl.planet_1 { background-image:url(images/planets/planet01.png); }
+body.skin-2-0 .planet-2 #planets .active,body.skin-2-0 #spionage-planet dl.planet_2 { background-image:url(images/planets/planet02.png); }
+body.skin-2-0 .planet-3 #planets .active,body.skin-2-0 #spionage-planet dl.planet_3 { background-image:url(images/planets/planet03.png); }
+body.skin-2-0 .planet-4 #planets .active,body.skin-2-0 #spionage-planet dl.planet_4 { background-image:url(images/planets/planet04.png); }
+body.skin-2-0 .planet-5 #planets .active,body.skin-2-0 #spionage-planet dl.planet_5 { background-image:url(images/planets/planet05.png); }
+body.skin-2-0 .planet-6 #planets .active,body.skin-2-0 #spionage-planet dl.planet_6 { background-image:url(images/planets/planet06.png); }
+body.skin-2-0 .planet-7 #planets .active,body.skin-2-0 #spionage-planet dl.planet_7 { background-image:url(images/planets/planet07.png); }
+body.skin-2-0 .planet-8 #planets .active,body.skin-2-0 #spionage-planet dl.planet_8 { background-image:url(images/planets/planet08.png); }
+body.skin-2-0 .planet-9 #planets .active,body.skin-2-0 #spionage-planet dl.planet_9 { background-image:url(images/planets/planet09.png); }
+body.skin-2-0 .planet-10 #planets .active,body.skin-2-0 #spionage-planet dl.planet_10 { background-image:url(images/planets/planet10.png); }
+body.skin-2-0 .planet-11 #planets .active,body.skin-2-0 #spionage-planet dl.planet_11 { background-image:url(images/planets/planet11.png); }
+body.skin-2-0 .planet-12 #planets .active,body.skin-2-0 #spionage-planet dl.planet_12 { background-image:url(images/planets/planet12.png); }
+body.skin-2-0 .planet-13 #planets .active,body.skin-2-0 #spionage-planet dl.planet_13 { background-image:url(images/planets/planet13.png); }
+body.skin-2-0 .planet-14 #planets .active,body.skin-2-0 #spionage-planet dl.planet_14 { background-image:url(images/planets/planet14.png); }
+body.skin-2-0 .planet-15 #planets .active,body.skin-2-0 #spionage-planet dl.planet_15 { background-image:url(images/planets/planet15.png); }
+body.skin-2-0 .planet-16 #planets .active,body.skin-2-0 #spionage-planet dl.planet_16 { background-image:url(images/planets/planet16.png); }
+body.skin-2-0 .planet-17 #planets .active,body.skin-2-0 #spionage-planet dl.planet_17 { background-image:url(images/planets/planet17.png); }
+body.skin-2-0 .planet-18 #planets .active,body.skin-2-0 #spionage-planet dl.planet_18 { background-image:url(images/planets/planet18.png); }
+body.skin-2-0 .planet-19 #planets .active,body.skin-2-0 #spionage-planet dl.planet_19 { background-image:url(images/planets/planet19.png); }
+body.skin-2-0 .planet-20 #planets .active,body.skin-2-0 #spionage-planet dl.planet_20 { background-image:url(images/planets/planet20.png); }
+
+body.skin-2-0 #ress dt { padding-left:21px !important; background-repeat:no-repeat; background-position:2px 50%; }
+body.skin-2-0 #ress dt.ress-carbon { background-image:url(images/resources/carbon.png); }
+body.skin-2-0 #ress dt.ress-aluminium { background-image:url(images/resources/aluminium.png); }
+body.skin-2-0 #ress dt.ress-wolfram { background-image:url(images/resources/wolfram.png); }
+body.skin-2-0 #ress dt.ress-radium { background-image:url(images/resources/radium.png); }
+body.skin-2-0 #ress dt.ress-tritium { background-image:url(images/resources/tritium.png); }
+body.skin-2-0 #ress dt.ress-energie { background-image:url(images/resources/energie.png); }
+
+* html body.skin-2-0 .unbeschaeftigte-planeten .c-voriger a,* html body.skin-2-0 .unbeschaeftigte-planeten .c-naechster a { width:45px; padding:0 0 0 45px; margin:0 .5ex; overflow:hidden; background-image:url(images/fastbuild.gif]); background-repeat:no-repeat; background-position:left center; }
+
+body.skin-2-0 #css-3 { position:fixed; top:.7em; right:.7em; height:50px; width:50px; z-index:30000; border:.1em solid #aaa; padding:.5em; background-position:center center; background-repeat:no-repeat; background-color:#222; display:block; }
+* html body.skin-2-0 #css-3 { position:absolute; margin-right:17px; }
+body.skin-2-0 .planet-1 #css-3 { background-image:url(images/planets_small/planet01.png); }
+body.skin-2-0 .planet-2 #css-3 { background-image:url(images/planets_small/planet02.png); }
+body.skin-2-0 .planet-3 #css-3 { background-image:url(images/planets_small/planet03.png); }
+body.skin-2-0 .planet-4 #css-3 { background-image:url(images/planets_small/planet04.png); }
+body.skin-2-0 .planet-5 #css-3 { background-image:url(images/planets_small/planet05.png); }
+body.skin-2-0 .planet-6 #css-3 { background-image:url(images/planets_small/planet06.png); }
+body.skin-2-0 .planet-7 #css-3 { background-image:url(images/planets_small/planet07.png); }
+body.skin-2-0 .planet-8 #css-3 { background-image:url(images/planets_small/planet08.png); }
+body.skin-2-0 .planet-9 #css-3 { background-image:url(images/planets_small/planet09.png); }
+body.skin-2-0 .planet-10 #css-3 { background-image:url(images/planets_small/planet10.png); }
+body.skin-2-0 .planet-11 #css-3 { background-image:url(images/planets_small/planet11.png); }
+body.skin-2-0 .planet-12 #css-3 { background-image:url(images/planets_small/planet12.png); }
+body.skin-2-0 .planet-13 #css-3 { background-image:url(images/planets_small/planet13.png); }
+body.skin-2-0 .planet-14 #css-3 { background-image:url(images/planets_small/planet14.png); }
+body.skin-2-0 .planet-15 #css-3 { background-image:url(images/planets_small/planet15.png); }
+body.skin-2-0 .planet-16 #css-3 { background-image:url(images/planets_small/planet16.png); }
+body.skin-2-0 .planet-17 #css-3 { background-image:url(images/planets_small/planet17.png); }
+body.skin-2-0 .planet-18 #css-3 { background-image:url(images/planets_small/planet18.png); }
+body.skin-2-0 .planet-19 #css-3 { background-image:url(images/planets_small/planet19.png); }
+body.skin-2-0 .planet-20 #css-3 { background-image:url(images/planets_small/planet20.png); }
+
+/* Colour: blue */
+body.skin-0-0 #time
+,body.skin-0-0 #ress
+,body.skin-0-0
+,body.skin-0-0 #css-3
+	{ background-color:#124; }
+body.skin-0-0 #time dt
+,body.skin-0-0 #time dd
+,body.skin-0-0 #ress dt
+,body.skin-0-0 #ress dd
+,body.skin-0-0 #navigation
+,body.skin-0-0 #content-13
+,body.skin-0-0 select
+,body.skin-0-0 option
+,body.skin-0-0 table
+	{ background-color:#457; }
+.body.skin-0-0 karte-system td.c-aktionen a
+,body.skin-0-0 #planets dt
+,body.skin-0-0 .planeten-reihenfolge .aktionen
+	{ color:#457; }
+
+body.skin-0-0 #content-12 h1
+,body.skin-0-0 #content-11 h2
+,body.skin-0-0 #inner-content h3
+,body.skin-0-0 #content-12 #content-13 .desc-prod h3
+,body.skin-0-0 #content-12 #content-13 .desc-deps h3
+,body.skin-0-0 #content-12 #content-13 .desc-values h3
+,body.skin-0-0 #content-12 .nachricht-informationen h3
+,body.skin-0-0 #content-12 .nachricht-informationen h4
+,body.skin-0-0 select
+,body.skin-0-0 input
+,body.skin-0-0 textarea
+,body.skin-0-0 button
+,body.skin-0-0 tr:hover
+,body.skin-0-0 .deps thead
+,body.skin-0-0 #js-title
+,body.skin-0-0 .popup
+,body.skin-0-0 #loading
+,body.skin-0-0 .imperium-tabelle tr.active
+,body.skin-0-0 #navigation .active a
+,body.skin-0-0  #navigation a:hover
+,body.skin-0-0 #navigation a:focus
+,body.skin-0-0 .imperium-modi a:hover
+,body.skin-0-0 .imperium-modi a:focus
+,body.skin-0-0 .highscores-modi a:hover
+,body.skin-0-0 .highscores-modi a:focus
+,body.skin-0-0 .changelog li:hover
+	{ background-color:#568; }
+body.skin-0-0 .karte-system tr:hover td.c-aktionen a
+	{ color:#568; }
+
+body.skin-0-0 #time
+,body.skin-0-0 #time dt
+,body.skin-0-0 #time dd
+,body.skin-0-0 #ress
+,body.skin-0-0 * html #ress
+,body.skin-0-0 #ress dt
+,body.skin-0-0 #ress dd
+,body.skin-0-0 #content-13
+,body.skin-0-0 select
+,body.skin-0-0 #content-12 h1
+,body.skin-0-0 #content-11 h2
+,body.skin-0-0 #content-13 h3
+,body.skin-0-0 #content-12 #content-13 .desc-prod h3
+,body.skin-0-0 #content-12 #content-13 .desc-deps h3
+,body.skin-0-0 #content-12 #content-13 .desc-values h3
+,body.skin-0-0 #content-12 .nachricht-informationen h3
+,body.skin-0-0 #content-12 .nachricht-informationen h4
+,body.skin-0-0 fieldset
+,body.skin-0-0 table
+,body.skin-0-0 td
+,body.skin-0-0 th
+,body.skin-0-0 thead
+,body.skin-0-0 tfoot
+,body.skin-0-0 dl
+,body.skin-0-0 dt
+,body.skin-0-0 dd
+,body.skin-0-0 hr
+,body.skin-0-0 .item
+,body.skin-0-0 .deps .c-item
+,body.skin-0-0 .deps td
+,body.skin-0-0 .buendnis-informationen li
+,body.skin-0-0 .playerinfo-planeten li
+,body.skin-0-0 .queue
+,body.skin-0-0 .queue li
+,body.skin-0-0 .queue .restbauzeit
+,body.skin-0-0 .nachrichten-kategorien dd.c-postausgang
+,body.skin-0-0 .nachrichten-kategorien dd.c-gesamt
+,body.skin-0-0 .nachricht-kampf p.keine
+,body.skin-0-0 .nachrichten-verbuendeten-links li.c-verbuendete
+,body.skin-0-0 .flotte-anzahl
+,body.skin-0-0 .flotte-versenden .flotte-schiffe dd
+,body.skin-0-0 .flotte-versenden-2 dl
+,body.skin-0-0 .flotte-versenden-2 dt
+,body.skin-0-0 .flotte-versenden-2 dd
+,body.skin-0-0 .flotte-versandt dl
+,body.skin-0-0 .flotte-versandt dt
+,body.skin-0-0 .flotte-versandt dd
+,body.skin-0-0 #planets li
+,body.skin-0-0 #planets li.active
+,body.skin-0-0 * html #planets li.active
+,body.skin-0-0 #flotten dt
+,body.skin-0-0 #flotten dd
+,body.skin-0-0 .buendnisse-liste ul li
+,body.skin-0-0 .allianz-laufende-bewerbungen ul li
+,body.skin-0-0 .buendnisse
+,body.skin-0-0 .allianz-laufende-bewerbungen
+,body.skin-0-0 #js-title
+,body.skin-0-0 #loading
+,body.skin-0-0 .handelsrechner-handelskurs dl dt
+,body.skin-0-0 .changelog
+,body.skin-0-0 .changelog li
+,body.skin-0-0 .planeten-reihenfolge li
+,body.skin-0-0 .shortcuts-verwalten li
+,body.skin-0-0 .allianz-moeglichkeiten
+,body.skin-0-0 .allianz-bewerben
+,body.skin-0-0 .allianz-suchergebnisse
+,body.skin-0-0 .imperium-tabelle th.c-planet
+,body.skin-0-0 .imperium-tabelle th.c-einheit
+,body.skin-0-0 .imperium-tabelle .c-gesamt
+,body.skin-0-0 .imperium-rohstoffproduktion .c-gesamt
+,body.skin-0-0 .imperium-modi li
+,body.skin-0-0 .highscores-modi li
+,body.skin-0-0 .alle-abbrechen
+,body.skin-0-0 select
+,body.skin-0-0 option
+,body.skin-0-0 textarea
+,body.skin-0-0 input
+,body.skin-0-0 button
+,body.skin-0-0 .popup
+,body.skin-0-0 #css-3
+,body.skin-0-0 .allianz-aktionen
+	{ border-color:#679; }
+
+body.skin-0-0 #navigation
+	{ border-color:#568; }
+body.skin-0-0 #navigation li
+	{ border-color:#568; }
+body.skin-0-0 #navigation li.active
+,body.skin-0-0 #navigation li:hover
+	{ border-color:#678; }
+body.skin-0-0 #navigation #navigation-karte
+,body.skin-0-0 #navigation #navigation-board
+	{ border-color:#568; }
+body.skin-0-0 #change-planet select
+	{ background-color:#568; border-color:#678; }
+
+body.skin-0-0 select:hover
+,body.skin-0-0 select:focus
+,body.skin-0-0 select:active
+,body.skin-0-0 input:hover
+,body.skin-0-0 input:focus
+,body.skin-0-0 input:active
+,body.skin-0-0 textarea:hover
+,body.skin-0-0 textarea:focus
+,body.skin-0-0 textarea:active
+,body.skin-0-0 button:hover
+,body.skin-0-0 button:focus
+,body.skin-0-0 button:active
+,body.skin-0-0 .highscores-modi .active a
+,body.skin-0-0 .imperium-modi .active a
+	{ background-color:#679; }
+
+body.skin-0-0 #inner-content * h3
+	{ background-color:transparent; }
+
+body.skin-0-0 a:hover
+,body.skin-0-0 a:focus
+,body.skin-0-0 #flotten .beschreibung:hover
+,body.skin-0-0 #flotten .handel a:hover
+,body.skin-0-0 #flotten .handel a:focus
+,body.skin-0-0 .planeten-reihenfolge .aktionen a:hover
+,body.skin-0-0 .planeten-reihenfolge .aktionen a:focus
+	{ color:#bbd; }
+body.skin-0-0 #flotten .rueckflug .beschreibung:hover
+,body.skin-0-0 .nachrichten-kategorien .alt a:hover
+,body.skin-0-0 .nachrichten-kategorien .alt a:focus
+,body.skin-0-0 .nachrichten-liste .alt a:hover
+,body.skin-0-0 .nachrichten-liste .alt a:focus
+,body.skin-0-0 .nachrichten-liste .archiviert a:hover
+,body.skin-0-0 .nachrichten-liste .archiviert a:focus
+	{ color:#779; }
