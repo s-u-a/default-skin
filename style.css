@@ -1,3 +1,20 @@
+/*
+    This file is part of Stars Under Attack.
+
+    Stars Under Attack is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Stars Under Attack is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with Stars Under Attack.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 body { font-size:1em; color:#fff; font-style:normal; }
 *,#planets .active dt { font-size:inherit; color:inherit; font-weight:inherit; font-style:inherit; font-variant:normal; text-decoration:inherit; font-family:inherit; margin:0; padding:0; }
 * html h1,* html h2,* html h3,* html h4 { font-size:100.01%; }
