@@ -1,4 +1,4 @@
-html { font-size:1em; color:#fff; font-style:normal; }
+body { font-size:1em; color:#fff; font-style:normal; }
 *,#planets .active dt { font-size:inherit; color:inherit; font-weight:inherit; font-style:inherit; font-variant:normal; text-decoration:inherit; font-family:inherit; margin:0; padding:0; }
 * html h1,* html h2,* html h3,* html h4 { font-size:100.01%; }
 * html *,* html #planets .active dt { font-size:11px; font-family:sans-serif; }
@@ -178,7 +178,9 @@ p { margin:.5em; }
 .deps tbody td { text-align:left; }
 .deps ul,ul.deps { margin:0; padding:0; list-style-type:none; }
 .deps .deps-ja,.deps .deps-ja a { color:#0f0; }
+.deps .deps-ja a:hover,.deps .deps-ja a:focus { color:#0c0; }
 .deps .deps-nein,.deps .deps-nein a { color:#f00; }
+.deps .deps-nein a:hover,.deps .deps-nein a:focus { color:#c00; }
 
 .desc { text-align:left; }
 .desc p,.desc dl { padding-left:.5em; padding-right:.5em; }
@@ -498,36 +500,36 @@ br.clear { clear:both; }
 .autocomplete li.selected { background-color:Highlight; color:HighlightText; }
 * html form { position:relative; }
 
-/* Resource bar: fixed */
+/* Resource bar: fixed (default) */
 
 body { padding:3.5em 1em 3.5em 12em; }
 * html,* html body { padding:0; margin:0; overflow-y:hidden; }
 
-body.mit-werbung.skin-1-0 #content-10,* html body.skin-1-0 #content-10 { margin-right:120px; }
-body.mit-werbung.skin-1-0 #content-9,* html body.skin-1-0 #content-9 { margin-right:1em; }
+#content-10.mit-werbung,* html #content-10 { margin-right:120px; }
+#content-9.mit-werbung,* html #content-9 { margin-right:1em; }
 
-body.skin-1-0 #time { position:fixed; right:0; border-left:.2em solid #aaa; }
-body.skin-1-0 #ress { position:fixed; }
-body.skin-1-0 #navigation { position:fixed; top:3.5em; left:1em; width:10em; }
-body.skin-1-0 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+#time { position:fixed; right:0; border-left:.2em solid #aaa; }
+#ress { position:fixed; }
+#navigation { position:fixed; top:3.5em; left:1em; width:10em; }
+#werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
 
-body.skin-1-0 #content-13 { position:relative; }
+#content-13 { position:relative; }
 
-* html body.skin-1-0 #time { position:absolute; left:0; right:auto; border-left-style:none; border-right:.2em solid #aaa; }
-* html body.skin-1-0 #ress { position:absolute; right:auto; }
+* html #time { position:absolute; left:0; right:auto; border-left-style:none; border-right:.2em solid #aaa; }
+* html #ress { position:absolute; right:auto; }
 
-* html body.skin-1-0 #navigation { position:absolute; top:3.5em; left:1em; width:10em;  }
-* html body.skin-1-0 #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
+* html #navigation { position:absolute; top:3.5em; left:1em; width:10em;  }
+* html #werbung { position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
 
-* html body.skin-1-0 #content-10 { position:absolute; top:0; left:0; bottom:0; right:0; overflow:auto; height:100%; width:100%; padding-top:3.6em; padding-left:12em; padding-right:120px; text-align:center; }
-* html body.skin-1-0 #content-11 { margin:2.6em 0 0 0; padding:1.1em 0 3.6em 0; width:100%; }
-* html body.skin-1-0 #content-12 { text-align:left; position:relative; }
-* html body.skin-1-0 #version { right:20px; z-index:40000; }
+* html #content-10 { position:absolute; top:0; left:0; bottom:0; right:0; overflow:auto; height:100%; width:100%; padding-top:3.6em; padding-left:12em; padding-right:120px; text-align:center; }
+* html #content-11 { margin:2.6em 0 0 0; padding:1.1em 0 3.6em 0; width:100%; }
+* html #content-12 { text-align:left; position:relative; }
+* html #version { right:20px; z-index:40000; }
 
 /* Resource bar: scrolling */
 
-body.mit-werbung.skin-1-1 #content-9,* html body.skin-1-1 #content-9 { margin-right:120px; }
-body.mit-werbung.skin-1-1 #content-8 { margin-right:1em; }
+body.skin-1-1 #content-9.mit-werbung,* html body.skin-1-1 #content-9 { margin-right:120px; }
+body.skin-1-1 #content-8.mit-werbung { margin-right:1em; }
 
 body.skin-1-1 #time { position:fixed; right:0; border-left:.2em solid #aaa; }
 body.skin-1-1 #ress { position:absolute; }
@@ -548,6 +550,9 @@ body.skin-1-1 #content-13 { position:relative; }
 * html body.skin-1-1 #content-12 { position:relative; }
 
 * html body.skin-1-1 #version { right:20px; z-index:40000; }
+
+/* Font: S-U-A */
+body.skin-3-0 { font-size:9pt; font-family:Arial,Tahoma,"Adobe Helvetica",sans-serif; }
 
 /* Graphics: on */
 
@@ -607,7 +612,7 @@ body.skin-2-0 #ress dt.ress-radium { background-image:url(images/resources/radiu
 body.skin-2-0 #ress dt.ress-tritium { background-image:url(images/resources/tritium.png); }
 body.skin-2-0 #ress dt.ress-energie { background-image:url(images/resources/energie.png); }
 
-* html body.skin-2-0 .unbeschaeftigte-planeten .c-voriger a,* html body.skin-2-0 .unbeschaeftigte-planeten .c-naechster a { width:45px; padding:0 0 0 45px; margin:0 .5ex; overflow:hidden; background-image:url(images/fastbuild.gif]); background-repeat:no-repeat; background-position:left center; }
+* html body.skin-2-0 .unbeschaeftigte-planeten .c-voriger a,* html body.skin-2-0 .unbeschaeftigte-planeten .c-naechster a { width:45px; padding:0 0 0 45px; margin:0 .5ex; overflow:hidden; background-image:url(images/fastbuild.gif); background-repeat:no-repeat; background-position:left center; }
 
 body.skin-2-0 #css-3 { position:fixed; top:.7em; right:.7em; height:50px; width:50px; z-index:30000; border:.1em solid #aaa; padding:.5em; background-position:center center; background-repeat:no-repeat; background-color:#222; display:block; }
 * html body.skin-2-0 #css-3 { position:absolute; margin-right:17px; }
@@ -648,7 +653,7 @@ body.skin-0-0 #time dt
 ,body.skin-0-0 option
 ,body.skin-0-0 table
 	{ background-color:#457; }
-.body.skin-0-0 karte-system td.c-aktionen a
+body.skin-0-0 .karte-system td.c-aktionen a
 ,body.skin-0-0 #planets dt
 ,body.skin-0-0 .planeten-reihenfolge .aktionen
 	{ color:#457; }
@@ -814,3 +819,404 @@ body.skin-0-0 #flotten .rueckflug .beschreibung:hover
 ,body.skin-0-0 .nachrichten-liste .archiviert a:hover
 ,body.skin-0-0 .nachrichten-liste .archiviert a:focus
 	{ color:#779; }
+
+
+/* Colour: black */
+
+body.skin-0-3
+	{ background-color:#181518; }
+body.skin-0-3 #gameinfo
+	{ color:#090909; font-weight:bold; }
+
+body.skin-0-3 #content-13
+,body.skin-0-3 select
+,body.skin-0-3 option
+,body.skin-0-3 table
+,body.skin-0-3 #time
+,body.skin-0-3 #ress
+,body.skin-0-3 #navigation
+,body.skin-0-3 #css-3
+,body.skin-0-3 select:hover
+,body.skin-0-3 select:focus
+,body.skin-0-3 select:active
+,body.skin-0-3 input:hover
+,body.skin-0-3 input:focus
+,body.skin-0-3 input:active
+,body.skin-0-3 textarea:hover
+,body.skin-0-3 textarea:focus
+,body.skin-0-3 textarea:active
+,body.skin-0-3 button:hover
+,body.skin-0-3 button:focus
+,body.skin-0-3 button:active
+,body.skin-0-3 .highscores-modi .active a
+,body.skin-0-3 .imperium-modi .active a
+	{ background-color:#000; }
+
+body.skin-0-3 .karte-system td.c-aktionen a
+,body.skin-0-3 #planets dt
+,body.skin-0-3 .planeten-reihenfolge .aktionen
+	{ color:#000; }
+
+body.skin-0-3 #navigation li.active
+,body.skin-0-3 #navigation li:hover
+,body.skin-0-3 #change-planet select
+,body.skin-0-3 #time dt
+,body.skin-0-3 #time dd
+,body.skin-0-3 #ress dt
+,body.skin-0-3 #ress dd
+	{ border-color:#111; }
+
+body.skin-0-3 #navigation .active a
+,body.skin-0-3  #navigation a:hover
+,body.skin-0-3 #navigation a:focus
+,body.skin-0-3 #change-planet select
+,body.skin-0-3 #time dt
+,body.skin-0-3 #time dd
+,body.skin-0-3 #ress dt
+,body.skin-0-3 #ress dd
+,body.skin-0-3 #content-12 h1
+,body.skin-0-3 #content-11 h2
+,body.skin-0-3 #inner-content h3
+,body.skin-0-3 #content-12 #content-13 .desc-prod h3
+,body.skin-0-3 #content-12 #content-13 .desc-deps h3
+,body.skin-0-3 #content-12 #content-13 .desc-values h3
+,body.skin-0-3 #content-12 .nachricht-informationen h3
+,body.skin-0-3 #content-12 .nachricht-informationen h4
+,body.skin-0-3 select
+,body.skin-0-3 input
+,body.skin-0-3 textarea
+,body.skin-0-3 button
+,body.skin-0-3 tr:hover
+,body.skin-0-3 .deps thead
+,body.skin-0-3 #js-title
+,body.skin-0-3 .popup
+,body.skin-0-3 #loading
+,body.skin-0-3 .imperium-tabelle tr.active
+,body.skin-0-3 .imperium-modi a:hover
+,body.skin-0-3 .imperium-modi a:focus
+,body.skin-0-3 .highscores-modi a:hover
+,body.skin-0-3 .highscores-modi a:focus
+,body.skin-0-3 .changelog li:hover
+	{ background-color:#0a0a0a; }
+
+body.skin-0-3 .karte-system tr:hover td.c-aktionen a
+	{ color:#0a0a0a; }
+
+body.skin-0-3 #content-13
+,body.skin-0-3 select
+,body.skin-0-3 #content-12 h1
+,body.skin-0-3 #content-11 h2
+,body.skin-0-3 #content-13 h3
+,body.skin-0-3 #content-12 #content-13 .desc-prod h3
+,body.skin-0-3 #content-12 #content-13 .desc-deps h3
+,body.skin-0-3 #content-12 #content-13 .desc-values h3
+,body.skin-0-3 #content-12 .nachricht-informationen h3
+,body.skin-0-3 #content-12 .nachricht-informationen h4
+,body.skin-0-3 fieldset
+,body.skin-0-3 table
+,body.skin-0-3 td
+,body.skin-0-3 th
+,body.skin-0-3 thead
+,body.skin-0-3 tfoot
+,body.skin-0-3 dl
+,body.skin-0-3 dt
+,body.skin-0-3 dd
+,body.skin-0-3 hr
+,body.skin-0-3 .item
+,body.skin-0-3 .deps .c-item
+,body.skin-0-3 .deps td
+,body.skin-0-3 .buendnis-informationen li
+,body.skin-0-3 .playerinfo-planeten li
+,body.skin-0-3 .queue
+,body.skin-0-3 .queue li
+,body.skin-0-3 .queue .restbauzeit
+,body.skin-0-3 .nachrichten-kategorien dd.c-postausgang
+,body.skin-0-3 .nachrichten-kategorien dd.c-gesamt
+,body.skin-0-3 .nachricht-kampf p.keine
+,body.skin-0-3 .nachrichten-verbuendeten-links li.c-verbuendete
+,body.skin-0-3 .flotte-anzahl
+,body.skin-0-3 .flotte-versenden .flotte-schiffe dd
+,body.skin-0-3 .flotte-versenden-2 dl
+,body.skin-0-3 .flotte-versenden-2 dt
+,body.skin-0-3 .flotte-versenden-2 dd
+,body.skin-0-3 .flotte-versandt dl
+,body.skin-0-3 .flotte-versandt dt
+,body.skin-0-3 .flotte-versandt dd
+,body.skin-0-3 #planets li
+,body.skin-0-3 #planets li.active
+,body.skin-0-3 * html #planets li.active
+,body.skin-0-3 #flotten dt
+,body.skin-0-3 #flotten dd
+,body.skin-0-3 .buendnisse-liste ul li
+,body.skin-0-3 .allianz-laufende-bewerbungen ul li
+,body.skin-0-3 .buendnisse
+,body.skin-0-3 .allianz-laufende-bewerbungen
+,body.skin-0-3 #js-title
+,body.skin-0-3 #loading
+,body.skin-0-3 .handelsrechner-handelskurs dl dt
+,body.skin-0-3 .changelog
+,body.skin-0-3 .changelog li
+,body.skin-0-3 .planeten-reihenfolge li
+,body.skin-0-3 .shortcuts-verwalten li
+,body.skin-0-3 .allianz-moeglichkeiten
+,body.skin-0-3 .allianz-bewerben
+,body.skin-0-3 .allianz-suchergebnisse
+,body.skin-0-3 .imperium-tabelle th.c-planet
+,body.skin-0-3 .imperium-tabelle th.c-einheit
+,body.skin-0-3 .imperium-tabelle .c-gesamt
+,body.skin-0-3 .imperium-rohstoffproduktion .c-gesamt
+,body.skin-0-3 .imperium-modi li
+,body.skin-0-3 .highscores-modi li
+,body.skin-0-3 .alle-abbrechen
+,body.skin-0-3 select
+,body.skin-0-3 option
+,body.skin-0-3 textarea
+,body.skin-0-3 input
+,body.skin-0-3 button
+,body.skin-0-3 .popup
+,body.skin-0-3 #css-3
+,body.skin-0-3 .allianz-aktionen
+,body.skin-0-3 #time
+,body.skin-0-3 #ress
+,body.skin-0-3 * html #ress
+,body.skin-0-3 #navigation li
+,body.skin-0-3 #navigation #navigation-karte
+,body.skin-0-3 #navigation #navigation-board
+,body.skin-0-3 #navigation
+	{ border-color:#0a0a0a; }
+
+body.skin-0-3 #flotten .rueckflug .beschreibung:hover
+,body.skin-0-3 .nachrichten-kategorien .alt a:hover
+,body.skin-0-3 .nachrichten-kategorien .alt a:focus
+,body.skin-0-3 .nachrichten-liste .alt a:hover
+,body.skin-0-3 .nachrichten-liste .alt a:focus
+,body.skin-0-3 .nachrichten-liste .archiviert a:hover
+,body.skin-0-3 .nachrichten-liste .archiviert a:focus
+	{ color:#555; }
+
+body.skin-0-3 a:hover
+,body.skin-0-3 a:focus
+,body.skin-0-3 #flotten .beschreibung:hover
+,body.skin-0-3 #flotten .handel a:hover
+,body.skin-0-3 #flotten .handel a:focus
+,body.skin-0-3 .planeten-reihenfolge .aktionen a:hover
+,body.skin-0-3 .planeten-reihenfolge .aktionen a:focus
+	{ color:#ccc; }
+
+body.skin-0-3 #inner-content * h3
+	{ background-color:transparent; }
+
+body.skin-0-3
+,body.skin-0-3 #time dt
+,body.skin-0-3 #time dd
+,body.skin-0-3 #ress dt
+,body.skin-0-3 #ress dd
+,body.skin-0-3 #navigation
+,* html body.skin-0-3 a
+,body.skin-0-3 #navigation a:hover
+,body.skin-0-3 #navigation a:focus
+,body.skin-0-3 select
+,body.skin-0-3 input
+,body.skin-0-3 textarea
+,body.skin-0-3 button
+,body.skin-0-3 #planets .active dt
+,body.skin-0-3 #flotten .beschreibung
+,body.skin-0-3 #flotten .handel a
+,body.skin-0-3 #flotten .buendnisangriff a
+,.planeten-reihenfolge .aktionen a
+,.shortcuts-verwalten .aktionen a
+	{ color:#aaa; }
+
+body.skin-0-3 .karte-system td.c-aktionen li:first-letter
+,body.skin-0-3 .karte-system td.c-aktionen a:first-letter
+,body.skin-0-3 #planets dt:first-letter
+	{ color:#aaa; }
+
+#flotten .beschreibung[title]
+,body.skin-0-3 #flotten .beschreibung[titleAttribute]
+,body.skin-0-3 #planets dd:before
+	{ color:#aaa; }
+
+
+/* Colour: green */
+body.skin-0-2 #time
+,body.skin-0-2 #ress
+,body.skin-0-2
+,body.skin-0-2 #css-3
+	{ background-color:#010; }
+body.skin-0-2 #time dt
+,body.skin-0-2 #time dd
+,body.skin-0-2 #ress dt
+,body.skin-0-2 #ress dd
+,body.skin-0-2 #navigation
+,body.skin-0-2 #content-13
+,body.skin-0-2 select
+,body.skin-0-2 option
+,body.skin-0-2 table
+	{ background-color:#003a15; }
+body.skin-0-2 .karte-system td.c-aktionen a
+,body.skin-0-2 #planets dt
+,body.skin-0-2 .planeten-reihenfolge .aktionen
+	{ color:#003a15; }
+
+body.skin-0-2 #content-12 h1
+,body.skin-0-2 #content-11 h2
+,body.skin-0-2 #inner-content h3
+,body.skin-0-2 #content-12 #content-13 .desc-prod h3
+,body.skin-0-2 #content-12 #content-13 .desc-deps h3
+,body.skin-0-2 #content-12 #content-13 .desc-values h3
+,body.skin-0-2 #content-12 .nachricht-informationen h3
+,body.skin-0-2 #content-12 .nachricht-informationen h4
+,body.skin-0-2 select
+,body.skin-0-2 input
+,body.skin-0-2 textarea
+,body.skin-0-2 button
+,body.skin-0-2 tr:hover
+,body.skin-0-2 .deps thead
+,body.skin-0-2 #js-title
+,body.skin-0-2 .popup
+,body.skin-0-2 #loading
+,body.skin-0-2 .imperium-tabelle tr.active
+,body.skin-0-2 #navigation .active a
+,body.skin-0-2  #navigation a:hover
+,body.skin-0-2 #navigation a:focus
+,body.skin-0-2 .imperium-modi a:hover
+,body.skin-0-2 .imperium-modi a:focus
+,body.skin-0-2 .highscores-modi a:hover
+,body.skin-0-2 .highscores-modi a:focus
+,body.skin-0-2 .changelog li:hover
+	{ background-color:#115025; }
+body.skin-0-2 .karte-system tr:hover td.c-aktionen a
+	{ color:#115025; }
+
+body.skin-0-2 #time
+,body.skin-0-2 #time dt
+,body.skin-0-2 #time dd
+,body.skin-0-2 #ress
+,body.skin-0-2 * html #ress
+,body.skin-0-2 #ress dt
+,body.skin-0-2 #ress dd
+,body.skin-0-2 #content-13
+,body.skin-0-2 select
+,body.skin-0-2 #content-12 h1
+,body.skin-0-2 #content-11 h2
+,body.skin-0-2 #content-13 h3
+,body.skin-0-2 #content-12 #content-13 .desc-prod h3
+,body.skin-0-2 #content-12 #content-13 .desc-deps h3
+,body.skin-0-2 #content-12 #content-13 .desc-values h3
+,body.skin-0-2 #content-12 .nachricht-informationen h3
+,body.skin-0-2 #content-12 .nachricht-informationen h4
+,body.skin-0-2 fieldset
+,body.skin-0-2 table
+,body.skin-0-2 td
+,body.skin-0-2 th
+,body.skin-0-2 thead
+,body.skin-0-2 tfoot
+,body.skin-0-2 dl
+,body.skin-0-2 dt
+,body.skin-0-2 dd
+,body.skin-0-2 hr
+,body.skin-0-2 .item
+,body.skin-0-2 .deps .c-item
+,body.skin-0-2 .deps td
+,body.skin-0-2 .buendnis-informationen li
+,body.skin-0-2 .playerinfo-planeten li
+,body.skin-0-2 .queue
+,body.skin-0-2 .queue li
+,body.skin-0-2 .queue .restbauzeit
+,body.skin-0-2 .nachrichten-kategorien dd.c-postausgang
+,body.skin-0-2 .nachrichten-kategorien dd.c-gesamt
+,body.skin-0-2 .nachricht-kampf p.keine
+,body.skin-0-2 .nachrichten-verbuendeten-links li.c-verbuendete
+,body.skin-0-2 .flotte-anzahl
+,body.skin-0-2 .flotte-versenden .flotte-schiffe dd
+,body.skin-0-2 .flotte-versenden-2 dl
+,body.skin-0-2 .flotte-versenden-2 dt
+,body.skin-0-2 .flotte-versenden-2 dd
+,body.skin-0-2 .flotte-versandt dl
+,body.skin-0-2 .flotte-versandt dt
+,body.skin-0-2 .flotte-versandt dd
+,body.skin-0-2 #planets li
+,body.skin-0-2 #planets li.active
+,body.skin-0-2 * html #planets li.active
+,body.skin-0-2 #flotten dt
+,body.skin-0-2 #flotten dd
+,body.skin-0-2 .buendnisse-liste ul li
+,body.skin-0-2 .allianz-laufende-bewerbungen ul li
+,body.skin-0-2 .buendnisse
+,body.skin-0-2 .allianz-laufende-bewerbungen
+,body.skin-0-2 #js-title
+,body.skin-0-2 #loading
+,body.skin-0-2 .handelsrechner-handelskurs dl dt
+,body.skin-0-2 .changelog
+,body.skin-0-2 .changelog li
+,body.skin-0-2 .planeten-reihenfolge li
+,body.skin-0-2 .shortcuts-verwalten li
+,body.skin-0-2 .allianz-moeglichkeiten
+,body.skin-0-2 .allianz-bewerben
+,body.skin-0-2 .allianz-suchergebnisse
+,body.skin-0-2 .imperium-tabelle th.c-planet
+,body.skin-0-2 .imperium-tabelle th.c-einheit
+,body.skin-0-2 .imperium-tabelle .c-gesamt
+,body.skin-0-2 .imperium-rohstoffproduktion .c-gesamt
+,body.skin-0-2 .imperium-modi li
+,body.skin-0-2 .highscores-modi li
+,body.skin-0-2 .alle-abbrechen
+,body.skin-0-2 select
+,body.skin-0-2 option
+,body.skin-0-2 textarea
+,body.skin-0-2 input
+,body.skin-0-2 button
+,body.skin-0-2 .popup
+,body.skin-0-2 #css-3
+,body.skin-0-2 .allianz-aktionen
+	{ border-color:#115025; }
+
+body.skin-0-2 #navigation
+	{ border-color:#115025; }
+body.skin-0-2 #navigation li
+	{ border-color:#115025; }
+body.skin-0-2 #navigation li.active
+,body.skin-0-2 #navigation li:hover
+	{ border-color:#115025; }
+body.skin-0-2 #navigation #navigation-karte
+,body.skin-0-2 #navigation #navigation-board
+	{ border-color:#115025; }
+body.skin-0-2 #change-planet select
+	{ background-color:#115025; border-color:#115025; }
+
+body.skin-0-2 select:hover
+,body.skin-0-2 select:focus
+,body.skin-0-2 select:active
+,body.skin-0-2 input:hover
+,body.skin-0-2 input:focus
+,body.skin-0-2 input:active
+,body.skin-0-2 textarea:hover
+,body.skin-0-2 textarea:focus
+,body.skin-0-2 textarea:active
+,body.skin-0-2 button:hover
+,body.skin-0-2 button:focus
+,body.skin-0-2 button:active
+,body.skin-0-2 .highscores-modi .active a
+,body.skin-0-2 .imperium-modi .active a
+	{ background-color:#003a15; }
+
+body.skin-0-2 #inner-content * h3
+	{ background-color:transparent; }
+
+body.skin-0-2 a:hover
+,body.skin-0-2 a:focus
+,body.skin-0-2 #flotten .beschreibung:hover
+,body.skin-0-2 #flotten .handel a:hover
+,body.skin-0-2 #flotten .handel a:focus
+,body.skin-0-2 .planeten-reihenfolge .aktionen a:hover
+,body.skin-0-2 .planeten-reihenfolge .aktionen a:focus
+	{ color:#70b080; }
+body.skin-0-2 #flotten .rueckflug .beschreibung:hover
+,body.skin-0-2 .nachrichten-kategorien .alt a:hover
+,body.skin-0-2 .nachrichten-kategorien .alt a:focus
+,body.skin-0-2 .nachrichten-liste .alt a:hover
+,body.skin-0-2 .nachrichten-liste .alt a:focus
+,body.skin-0-2 .nachrichten-liste .archiviert a:hover
+,body.skin-0-2 .nachrichten-liste .archiviert a:focus
+	{ color:#353; }
