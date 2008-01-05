@@ -573,6 +573,10 @@ body.skin-3-0 { font-size:9pt; font-family:Arial,Tahoma,"Adobe Helvetica",sans-s
 
 /* Graphics: on */
 
+
+body.skin-2-0.mit-werbung,body.skin-2-0.ohne-werbung /* Darf nur von Browsern interpretiert werden, die multiple Klassen unterstuetzen. */
+	{ background-image:url(images/background_grey.png); }
+
 body.skin-2-0 #planets { padding:0 0 250px 0 !important; }
 * html body.skin-2-0 #planets { padding:0 !important; }
 
@@ -660,6 +664,9 @@ body.skin-0-0 #time
 ,body.skin-0-0
 ,body.skin-0-0 #css-3
 	{ background-color:#124; }
+
+body.skin-0-0.skin-2-0 { background-image:url(images/background_blue.png); }
+
 body.skin-0-0 #time dt
 ,body.skin-0-0 #time dd
 ,body.skin-0-0 #ress dt
@@ -842,6 +849,7 @@ body.skin-0-0 #flotten .rueckflug .beschreibung:hover
 
 body.skin-0-3
 	{ background-color:#181518; }
+body.skin-0-3.skin-2-0 { background-image:url(images/background_black.png); }
 body.skin-0-3 #gameinfo
 	{ color:#090909; font-weight:bold; }
 
@@ -1040,8 +1048,8 @@ body.skin-0-3
 ,body.skin-0-3 #flotten .beschreibung
 ,body.skin-0-3 #flotten .handel a
 ,body.skin-0-3 #flotten .buendnisangriff a
-,.planeten-reihenfolge .aktionen a
-,.shortcuts-verwalten .aktionen a
+,body.skin-0-3 .planeten-reihenfolge .aktionen a
+,body.skin-0-3 .shortcuts-verwalten .aktionen a
 	{ color:#aaa; }
 
 body.skin-0-3 .karte-system td.c-aktionen li:first-letter
@@ -1049,10 +1057,41 @@ body.skin-0-3 .karte-system td.c-aktionen li:first-letter
 ,body.skin-0-3 #planets dt:first-letter
 	{ color:#aaa; }
 
-#flotten .beschreibung[title]
+body.skin-0-3 #flotten .beschreibung[title]
 ,body.skin-0-3 #flotten .beschreibung[titleAttribute]
 ,body.skin-0-3 #planets dd:before
 	{ color:#aaa; }
+
+body.skin-0-3 .nachrichten-kategorien .alt a
+,body.skin-0-3 .nachrichten-kategorien dt.c-gesamt.alt
+,body.skin-0-3 .nachrichten-kategorien .leer a
+,body.skin-0-3 .nachrichten-liste .alt a
+,body.skin-0-3 .nachrichten-liste .archiviert a
+,body.skin-0-3 #flotten .rueckflug .beschreibung
+	{ color:#555; } /* Old links */
+,body.skin-0-3 #flotten .rueckflug .beschreibung[title]
+,body.skin-0-3 #flotten .rueckflug .beschreibung[titleAttribute]
+	{ color:#555; }
+
+body.skin-0-3 .nachrichten-kategorien .alt a:hover
+,body.skin-0-3 .nachrichten-kategorien .alt a:focus
+,body.skin-0-3 .nachrichten-kategorien .leer a:hover
+,body.skin-0-3 .nachrichten-kategorien .leer a:focus
+,body.skin-0-3 .nachrichten-liste .alt a:hover
+,body.skin-0-3 .nachrichten-liste .alt a:focus
+,body.skin-0-3 .nachrichten-liste .archiviert a:hover
+,body.skin-0-3 .nachrichten-liste .archiviert a:focus
+,body.skin-0-3 #flotten .rueckflug .beschreibung:hover
+	{ color:#777; } /* Old links hover */
+,body.skin-0-3 #flotten .rueckflug .beschreibung[title]:hover
+,body.skin-0-3 #flotten .rueckflug .beschreibung[titleAttribute]:hover
+	{ color:#777; }
+
+body.skin-0-3 select[readonly]
+,body.skin-0-3 input[readonly]
+,body.skin-0-3 textarea[readonly]
+,body.skin-0-3 button[readonly]
+	{ color:#555; }
 
 
 /* Colour: green */
@@ -1061,6 +1100,8 @@ body.skin-0-2 #time
 ,body.skin-0-2
 ,body.skin-0-2 #css-3
 	{ background-color:#010; }
+body.skin-0-2.skin-2-0 { background-image:url(images/background_green.png); }
+
 body.skin-0-2 #time dt
 ,body.skin-0-2 #time dd
 ,body.skin-0-2 #ress dt
