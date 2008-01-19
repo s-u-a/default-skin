@@ -1334,4 +1334,4 @@ body.skin-0-3 #google-color-bg-green { height:59px; }
 body.skin-0-3 #google-color-bg-blue { height:22px; }
 
 /* Negative resources: red */
-body.skin-4-1 #content-1 .ress .negativ { color:#f00; }
+body.skin-4-1 #content-1 .ress dd.negativ { color:#f00; }
