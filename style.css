@@ -877,7 +877,7 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 .imperium-modi .active a
 	{ background-color:#000; }
 
-html:first-child>b\ody select
+html:first-child>b\ody.skin-0-0 select,html:first-child>b\ody.skin-0-0 select:hover,html:first-child>b\ody.skin-0-0 select:focus,html:first-child>b\ody.skin-0-0 select:active
 	{ background-color:#aaa; color:#000; }
 
 body.skin-0-0 .karte-system td.c-aktionen a
