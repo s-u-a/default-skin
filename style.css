@@ -877,6 +877,9 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 .imperium-modi .active a
 	{ background-color:#000; }
 
+html:first-child>b\ody select
+	{ background-color:#aaa; color:#000; }
+
 body.skin-0-0 .karte-system td.c-aktionen a
 ,body.skin-0-0 #planets dt
 ,body.skin-0-0 .planeten-reihenfolge .aktionen
