@@ -85,10 +85,11 @@ a:hover,a:focus { color:#ccc; }
 #navigation a:hover,#navigation a:focus { color:#fff; }
 
 select,input,textarea,button { border:.1em solid #999; background-color:#888; color:#fff; font-weight:700; padding:0 .2em; }
+option { color:#fff; }
 button { text-align:center; }
 input[type=submit],input[type=reset],input[type=button] { text-align:center; }
-select:hover,select:focus,select:active,input:hover,input:focus,input:active,textarea:hover,textarea:focus,textarea:active,button:hover,button:focus,button:active { background-color:#999; }
-select[readonly],input[readonly],textarea[readonly],button[readonly] { color:#ccc; }
+select:hover,select:focus,select:active,select:hover option,select:focus option,select:active option,input:hover,input:focus,input:active,textarea:hover,textarea:focus,textarea:active,button:hover,button:focus,button:active { background-color:#999; }
+select[readonly],select[readonly] option,input[readonly],textarea[readonly],button[readonly] { color:#ccc; }
 form div { text-align:center; padding:.5em; }
 form * div { text-align:inherit; padding:0; } /* IE Wuergaround */
 form div button { width:75%; text-align:center; margin:0 auto; }
@@ -691,6 +692,7 @@ body.skin-0-1 #content-12 h1
 ,body.skin-0-1 #content-12 .nachricht-informationen h3
 ,body.skin-0-1 #content-12 .nachricht-informationen h4
 ,body.skin-0-1 select
+,body.skin-0-1 option
 ,body.skin-0-1 input
 ,body.skin-0-1 textarea
 ,body.skin-0-1 button
@@ -805,12 +807,15 @@ body.skin-0-1 #navigation li.active
 body.skin-0-1 #navigation #navigation-karte
 ,body.skin-0-1 #navigation #navigation-board
 	{ border-color:#568; }
-body.skin-0-1 #change-planet select
+body.skin-0-1 #change-planet select,body.skin-0-1 #change-planet option
 	{ background-color:#568; border-color:#678; }
 
 body.skin-0-1 select:hover
 ,body.skin-0-1 select:focus
 ,body.skin-0-1 select:active
+,body.skin-0-1 select:hover option
+,body.skin-0-1 select:focus option
+,body.skin-0-1 select:active option
 ,body.skin-0-1 input:hover
 ,body.skin-0-1 input:focus
 ,body.skin-0-1 input:active
@@ -864,6 +869,9 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 select:hover
 ,body.skin-0-0 select:focus
 ,body.skin-0-0 select:active
+,body.skin-0-0 select:hover option
+,body.skin-0-0 select:focus option
+,body.skin-0-0 select:active option
 ,body.skin-0-0 input:hover
 ,body.skin-0-0 input:focus
 ,body.skin-0-0 input:active
@@ -876,9 +884,6 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 .highscores-modi .active a
 ,body.skin-0-0 .imperium-modi .active a
 	{ background-color:#000; }
-
-html:first-child>b\ody.skin-0-0 select,html:first-child>b\ody.skin-0-0 select:hover,html:first-child>b\ody.skin-0-0 select:focus,html:first-child>b\ody.skin-0-0 select:active
-	{ background-color:#aaa; color:#000; }
 
 body.skin-0-0 .karte-system td.c-aktionen a
 ,body.skin-0-0 #planets dt
@@ -898,6 +903,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0  #navigation a:hover
 ,body.skin-0-0 #navigation a:focus
 ,body.skin-0-0 #change-planet select
+,body.skin-0-0 #change-planet option
 ,body.skin-0-0 #time dt
 ,body.skin-0-0 #time dd
 ,body.skin-0-0 #ress dt
@@ -911,6 +917,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 #content-12 .nachricht-informationen h3
 ,body.skin-0-0 #content-12 .nachricht-informationen h4
 ,body.skin-0-0 select
+,body.skin-0-0 option
 ,body.skin-0-0 input
 ,body.skin-0-0 textarea
 ,body.skin-0-0 button
@@ -931,7 +938,6 @@ body.skin-0-0 .karte-system tr:hover td.c-aktionen a
 	{ color:#0a0a0a; }
 
 body.skin-0-0 #content-13
-,body.skin-0-0 select
 ,body.skin-0-0 #content-12 h1
 ,body.skin-0-0 #content-11 h2
 ,body.skin-0-0 #content-13 h3
@@ -1044,6 +1050,7 @@ body.skin-0-0
 ,body.skin-0-0 #navigation a:hover
 ,body.skin-0-0 #navigation a:focus
 ,body.skin-0-0 select
+,body.skin-0-0 option
 ,body.skin-0-0 input
 ,body.skin-0-0 textarea
 ,body.skin-0-0 button
@@ -1091,6 +1098,7 @@ body.skin-0-0 #flotten .rueckflug .beschreibung[title]:hover
 	{ color:#777; }
 
 body.skin-0-0 select[readonly]
+,body.skin-0-0 select[readonly] option
 ,body.skin-0-0 input[readonly]
 ,body.skin-0-0 textarea[readonly]
 ,body.skin-0-0 button[readonly]
@@ -1129,6 +1137,7 @@ body.skin-0-3 #content-12 h1
 ,body.skin-0-3 #content-12 .nachricht-informationen h3
 ,body.skin-0-3 #content-12 .nachricht-informationen h4
 ,body.skin-0-3 select
+,body.skin-0-3 option
 ,body.skin-0-3 input
 ,body.skin-0-3 textarea
 ,body.skin-0-3 button
@@ -1158,7 +1167,6 @@ body.skin-0-3 #time
 ,body.skin-0-3 #ress dt
 ,body.skin-0-3 #ress dd
 ,body.skin-0-3 #content-13
-,body.skin-0-3 select
 ,body.skin-0-3 #content-12 h1
 ,body.skin-0-3 #content-11 h2
 ,body.skin-0-3 #content-13 h3
@@ -1244,11 +1252,15 @@ body.skin-0-3 #navigation #navigation-karte
 ,body.skin-0-3 #navigation #navigation-board
 	{ border-color:#115025; }
 body.skin-0-3 #change-planet select
+,body.skin-0-3 #change-planet option
 	{ background-color:#115025; border-color:#115025; }
 
 body.skin-0-3 select:hover
 ,body.skin-0-3 select:focus
 ,body.skin-0-3 select:active
+,body.skin-0-3 select:hover option
+,body.skin-0-3 select:focus option
+,body.skin-0-3 select:active option
 ,body.skin-0-3 input:hover
 ,body.skin-0-3 input:focus
 ,body.skin-0-3 input:active
