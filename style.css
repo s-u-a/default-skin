@@ -385,8 +385,7 @@ h2#punkte { clear:right; }
 #flotten dt.rueckflug.eigen { color:#0b0; }
 #flotten dt.fremd.type-4,#flotten dt.fremd.type-6 { color:#0cf; }
 #flotten dt.fremd.type-3,#flotten dt.fremd.type-5 { color:#f00; }
-#flotten .beschreibung,#flotten .handel a,#flotten .buendnisangriff a { color:#fff; }
-#flotten .beschreibung { cursor:help; }
+#flotten .handel a,#flotten .buendnisangriff a { color:#fff; }
 #flotten .rueckflug .beschreibung { color:#bbb; }
 #flotten .beschreibung:hover,#flotten .handel a:hover,#flotten .handel a:focus,#flotten .buendnisangriff a:hover,#flotten .buendnisangriff a:focus { color:#ccc; }
 #flotten .rueckflug .beschreibung:hover { color:#aaa; }
@@ -1060,7 +1059,6 @@ body.skin-0-0
 ,body.skin-0-0 textarea
 ,body.skin-0-0 button
 ,body.skin-0-0 #planets .active dt
-,body.skin-0-0 #flotten .beschreibung
 ,body.skin-0-0 #flotten .handel a
 ,body.skin-0-0 #flotten .buendnisangriff a
 ,body.skin-0-0 .planeten-reihenfolge .aktionen a
@@ -1082,7 +1080,6 @@ body.skin-0-0 .nachrichten-kategorien .alt a
 ,body.skin-0-0 .nachrichten-kategorien .leer a
 ,body.skin-0-0 .nachrichten-liste .alt a
 ,body.skin-0-0 .nachrichten-liste .archiviert a
-,body.skin-0-0 #flotten .rueckflug .beschreibung
 	{ color:#555; } /* Old links */
 body.skin-0-0 #flotten .rueckflug .beschreibung[title]
 ,body.skin-0-0 #flotten .rueckflug .beschreibung[titleAttribute]
@@ -1096,7 +1093,6 @@ body.skin-0-0 .nachrichten-kategorien .alt a:hover
 ,body.skin-0-0 .nachrichten-liste .alt a:focus
 ,body.skin-0-0 .nachrichten-liste .archiviert a:hover
 ,body.skin-0-0 .nachrichten-liste .archiviert a:focus
-,body.skin-0-0 #flotten .rueckflug .beschreibung:hover
 	{ color:#777; } /* Old links hover */
 body.skin-0-0 #flotten .rueckflug .beschreibung[title]:hover
 ,body.skin-0-0 #flotten .rueckflug .beschreibung[titleAttribute]:hover
@@ -1284,14 +1280,12 @@ body.skin-0-3 #inner-content * h3
 
 body.skin-0-3 a:hover
 ,body.skin-0-3 a:focus
-,body.skin-0-3 #flotten .beschreibung:hover
 ,body.skin-0-3 #flotten .handel a:hover
 ,body.skin-0-3 #flotten .handel a:focus
 ,body.skin-0-3 .planeten-reihenfolge .aktionen a:hover
 ,body.skin-0-3 .planeten-reihenfolge .aktionen a:focus
 	{ color:#70b080; }
-body.skin-0-3 #flotten .rueckflug .beschreibung:hover
-,body.skin-0-3 .nachrichten-kategorien .alt a:hover
+body.skin-0-3 .nachrichten-kategorien .alt a:hover
 ,body.skin-0-3 .nachrichten-kategorien .alt a:focus
 ,body.skin-0-3 .nachrichten-liste .alt a:hover
 ,body.skin-0-3 .nachrichten-liste .alt a:focus
