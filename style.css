@@ -394,7 +394,7 @@ h2#punkte { clear:right; }
 #flotten .rueckflug .beschreibung[title],#flotten .rueckflug .beschreibung[titleAttribute] { color:#bbb; }
 #flotten .beschreibung[title]:hover,#flotten .beschreibung[titleAttribute]:hover { color:#ccc; }
 #flotten .rueckflug .beschreibung[title]:hover,#flotten .rueckflug .beschreibung[titleAttribute]:hover { color:#aaa; }
-#flotten .handel,#flotten .buendnisangriff { text-align:center; }
+#flotten .handel,#flotten .buendnisangriff,.flotte-versandt .handel,.flotte-versandt .buendnisangriff { text-align:center; }
 
 .highscores { width:50%; font-weight:700; }
 .highscores td,.highscores th { padding:.1em .3em; }
