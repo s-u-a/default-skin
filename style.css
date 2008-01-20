@@ -337,10 +337,10 @@ fieldset.flotte-schiffe { clear:left; }
 .flotte-versenden-2 dt { width:25ex; border-bottom:.1em solid #aaa; border-right:.1em solid #aaa; padding:.3em 1ex; }
 .flotte-versenden-2 dd { margin:0 0 0 27ex; border-bottom:.1em solid #aaa; padding:.3em 1ex; }
 .flotte-versenden-2 dd.c-transport { padding:0; border-style:none; }
-.flotte-versenden-2 .c-transport input { width:12ex; text-align:right; }
+.flotte-versenden-2 .c-transport input { width:9ex; text-align:right; }
 .flotte-versenden-2 .c-transport dl { margin:0; padding:.5em; width:auto; border-style:none none none solid; }
-.flotte-versenden-2 .c-transport dt { float:left; padding:0; margin:0; width:20ex; border-style:none; }
-.flotte-versenden-2 .c-transport dd { padding:0; margin:0; width:auto; border-style:none; }
+.flotte-versenden-2 .c-transport dt { float:left; padding:0; margin:0; width:18ex; border-style:none; }
+.flotte-versenden-2 .c-transport dd { padding:0; margin:0 0 0 18ex; width:auto; border-style:none; }
 
 .flotte-versandt dl { width:100%; max-width:65ex; margin:.5em auto; text-align:left; padding:0; border:.1em solid #aaa; font-weight:700; }
 * html .flotte-versandt dl { width:65ex; }
@@ -517,6 +517,11 @@ br.clear { clear:both; }
 .autocomplete li { cursor:pointer; padding:0 2px; }
 .autocomplete li.selected { background-color:Highlight; color:HighlightText; }
 * html form { position:relative; }
+
+.max { font-size:.8em; }
+.max:before { content:"("; }
+.max:after { content:")"; }
+
 
 /* Resource bar: fixed (default) */
 
