@@ -521,6 +521,8 @@ br.clear { clear:both; }
 .max:before { content:"("; }
 .max:after { content:")"; }
 
+a[href],a[onclick] { cursor:pointer; }
+
 
 /* Resource bar: fixed (default) */
 
