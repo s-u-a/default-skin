@@ -119,7 +119,7 @@ tbody th[colspan] { text-align:center; }
 th { font-weight:700; }
 thead { border-bottom:.2em solid #aaa; }
 tfoot { border-top:.2em solid #aaa; }
-tr:hover { background-color:#888; }
+tr:hover,tr.active { background-color:#888; }
 dl { width:100%; margin:0; padding:0; border:.1em solid #aaa; border-bottom-style:none; width:70%; margin:.5em 15%; }
 * html dl { position:relative; }
 dt { width:30%; float:left; clear:left; margin:0; padding:.2em .3em; font-weight:700; position:relative; border-right:.1em solid #aaa; text-align:left; }
@@ -487,7 +487,6 @@ br.clear { clear:both; }
 .imperium-tabelle th,.imperium-tabelle td { padding:.1em .2em; }
 .imperium-tabelle td { text-align:right; }
 .imperium-tabelle th.c-planet,.imperium-tabelle th.c-einheit { border-right:.2em solid #aaa; }
-.imperium-tabelle tr.active { background-color:#888; }
 .imperium-tabelle .c-gesamt { border-left:.2em solid #aaa; }
 .imperium-rohstoffproduktion .c-gesamt { border-right:.2em solid #aaa; }
 .imperium-rohstoffproduktion .positiv { color:#0f0; }
@@ -710,7 +709,7 @@ body.skin-0-1 #content-12 h1
 ,body.skin-0-1 #js-title
 ,body.skin-0-1 .popup
 ,body.skin-0-1 #loading
-,body.skin-0-1 .imperium-tabelle tr.active
+,body.skin-0-1 tr.active
 ,body.skin-0-1 #navigation .active a
 ,body.skin-0-1  #navigation a:hover
 ,body.skin-0-1 #navigation a:focus
@@ -945,7 +944,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 #js-title
 ,body.skin-0-0 .popup
 ,body.skin-0-0 #loading
-,body.skin-0-0 .imperium-tabelle tr.active
+,body.skin-0-0 tr.active
 ,body.skin-0-0 .imperium-modi a:hover
 ,body.skin-0-0 .imperium-modi a:focus
 ,body.skin-0-0 .highscores-modi a:hover
@@ -1167,7 +1166,7 @@ body.skin-0-3 #content-12 h1
 ,body.skin-0-3 #js-title
 ,body.skin-0-3 .popup
 ,body.skin-0-3 #loading
-,body.skin-0-3 .imperium-tabelle tr.active
+,body.skin-0-3 tr.active
 ,body.skin-0-3 #navigation .active a
 ,body.skin-0-3  #navigation a:hover
 ,body.skin-0-3 #navigation a:focus
