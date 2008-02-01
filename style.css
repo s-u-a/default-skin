@@ -99,7 +99,7 @@ body.skin-1-1 #content-9.mit-werbung,* html body.skin-1-1 #content-9 { margin-ri
 /* Headings */
 h1,h2 { margin:0; padding:.1em; border-bottom:.1em solid #aaa; text-align:center; background-color:#888; font-weight:bold; position:relative; }
 h1 { padding:.2em; border-bottom-width:.2em; }
-#inner-content h3.strong,#inner-content h4.strong { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; font-weight:bold; position:relative; line-height:inherit; }
+h3.strong,h4.strong { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; font-weight:bold; position:relative; line-height:inherit; }
 
 /* Advertisments */
 #werbung { z-index:10000; position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
@@ -652,6 +652,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 input
 ,body.skin-0-0 textarea
 ,body.skin-0-0 button
+,body.skin-0-0 thead tr
 ,body.skin-0-0 tr:hover
 ,body.skin-0-0 tr.active
 ,body.skin-0-0 .whole-page li:hover
@@ -753,7 +754,7 @@ body.skin-0-1 #navigation .active a,body.skin-0-1  #navigation a:hover,body.skin
 ,body.skin-0-1 #navigation .separator
 ,body.skin-0-1 #change-planet select
 ,body.skin-0-1 h1,body.skin-0-1 h2
-,body.skin-0-1 #inner-content h3.strong,body.skin-0-1 #inner-content h4.strong
+,body.skin-0-1 h3.strong,body.skin-0-1 h4.strong
 ,body.skin-0-1 select,body.skin-0-1 input,body.skin-0-1 textarea,body.skin-0-1 button,body.skin-0-1 option,body.skin-0-1 optgroup
 ,body.skin-0-1 thead tr,body.skin-0-1 tr:hover,body.skin-0-1 tr.active,body.skin-0-1 .whole-page li:hover,body.skin-0-1 .whole-page li.active
 ,body.skin-0-1 #js-title,body.skin-0-1 .popup,body.skin-0-1 #loading
@@ -819,7 +820,7 @@ body.skin-0-3 #navigation .active a,body.skin-0-3  #navigation a:hover,body.skin
 ,body.skin-0-3 #navigation .separator
 ,body.skin-0-3 #change-planet select
 ,body.skin-0-3 h1,body.skin-0-3 h2
-,body.skin-0-3 #inner-content h3.strong,body.skin-0-3 #inner-content h4.strong
+,body.skin-0-3 h3.strong,body.skin-0-3 h4.strong
 ,body.skin-0-3 select,body.skin-0-3 input,body.skin-0-3 textarea,body.skin-0-3 button,body.skin-0-3 option,body.skin-0-3 optgroup
 ,body.skin-0-3 thead tr,body.skin-0-3 tr:hover,body.skin-0-3 tr.active,body.skin-0-3 .whole-page li:hover,body.skin-0-3 .whole-page li.active
 ,body.skin-0-3 #js-title,body.skin-0-3 .popup,body.skin-0-3 #loading
