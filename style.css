@@ -473,6 +473,7 @@ body.skin-2-0 .planet-20 #planets .active,body.skin-2-0 #spionage-planet dl.plan
 #flotten dt.eigen.rueckflug { color:#0b0; }
 #flotten dt.fremd.type-4,#flotten dt.fremd.type-6 { color:#0cf; }
 #flotten dt.fremd.type-3,#flotten dt.fremd.type-5 { color:#f00; }
+#flotten .beschreibung { color:#fff; cursor:help; }
 #flotten .beschreibung:hover { color:#ccc; }
 #flotten .rueckflug .beschreibung { color:#bbb; }
 #flotten .rueckflug .beschreibung:hover { color:#aaa; }
@@ -678,6 +679,8 @@ body#body-root .skin-0-0 .skin-0-0 .skin-0-0 *
 ,body.skin-0-0 .popup
 	{ border-color:#0a0a0a; }
 
+body.skin-0-0 #flotten .beschreibung[class],body.skin-0-0 #flotten .beschreibung[class]:hover,body.skin-0-0 #flotten .rueckflug .beschreibung[class]:hover { color:inherit; } /* Overwrite for browsers that feature the attribute selector */
+
 body.skin-0-0 .order-list .aktionen a:hover,body.skin-0-0 .order-list .aktionen a:focus
 ,body.skin-0-0 a:hover,a:focus
 ,body.skin-0-0 #flotten .beschreibung:hover
@@ -693,14 +696,16 @@ body.skin-0-0
 ,body.skin-0-0 a
 ,body.skin-0-0 .tabs a:hover,body.skin-0-0 .tabs a:focus
 ,body.skin-0-0 #planets .active dt
+,body.skin-0-0 #flotten .beschreibung
 	{ color:#aaa; }
 
 body.skin-0-0 #planets dt:first-letter
 ,body.skin-0-0 .karte-system td.c-aktionen li:first-letter,body.skin-0-0 .karte-system td.c-aktionen a:first-letter
 	{ color:#aaa; }
 
+body.skin-0-0 #planets dd:before
+	{ color:#aaa; }
 body.skin-0-0 #flotten .beschreibung[title],body.skin-0-0 #flotten .beschreibung[titleAttribute]
-,body.skin-0-0 #planets dd:before
 	{ color:#aaa; }
 
 body.skin-0-0 #flotten .rueckflug .beschreibung
@@ -723,8 +728,6 @@ body.skin-0-0 #flotten .rueckflug .beschreibung:hover
 body.skin-0-0 #flotten .rueckflug .beschreibung[title]:hover
 ,body.skin-0-0 #flotten .rueckflug .beschreibung[titleAttribute]:hover
 	{ color:#777; }
-
-body.skin-0-0 #flotten .beschreibung[class],body.skin-0-0 #flotten .beschreibung[class]:hover,body.skin-0-0 #flotten .rueckflug .beschreibung[class]:hover { color:inherit; } /* Overwrite for browsers that feature the attribute selector */
 
 body.skin-0-0 select[readonly]
 ,body.skin-0-0 select[readonly] option
@@ -789,14 +792,18 @@ body.skin-0-1 select:hover,body.skin-0-1 select:focus,body.skin-0-1 select:activ
 
 body.skin-0-1 #flotten .beschreibung[class],body.skin-0-1 #flotten .beschreibung[class]:hover,body.skin-0-1 #flotten .rueckflug .beschreibung[class]:hover
 	{ color:inherit; } /* Overwrite for browsers that feature the attribute selector */
+
 body.skin-0-1 .order-list .aktionen a:hover,body.skin-0-1 .order-list .aktionen a:focus
 ,body.skin-0-1 a:hover,a:focus
 ,body.skin-0-1 #flotten .beschreibung:hover
-,body.skin-0-1 #flotten .beschreibung[title]:hover,body.skin-0-1 #flotten .beschreibung[titleAttribute]:hover
 	{ color:#bbd; }
+body.skin-0-1 #flotten .beschreibung[title]:hover,body.skin-0-1 #flotten .beschreibung[titleAttribute]:hover
+	{ color:#bbd; }
+
 body.skin-0-1 .type-weak a:hover,body.skin-0-1 .type-weak a:focus,body.skin-0-1 .type-em a:hover,body.skin-0-1 .type-em a:focus,body.skin-0-1 .type-empty a:hover,body.skin-0-1 .type-empty a:focus
 ,body.skin-0-1 #flotten .rueckflug .beschreibung:hover
-,body.skin-0-1 #flotten .rueckflug .beschreibung[title]:hover,body.skin-0-1 #flotten .rueckflug .beschreibung[titleAttribute]:hover
+	{ color:#779; }
+body.skin-0-1 #flotten .rueckflug .beschreibung[title]:hover,body.skin-0-1 #flotten .rueckflug .beschreibung[titleAttribute]:hover
 	{ color:#779; }
 
 
@@ -851,11 +858,14 @@ body.skin-0-3 #flotten .beschreibung[class],body.skin-0-3 #flotten .beschreibung
 body.skin-0-3 .order-list .aktionen a:hover,body.skin-0-3 .order-list .aktionen a:focus
 ,body.skin-0-3 a:hover,a:focus
 ,body.skin-0-3 #flotten .beschreibung:hover
-,body.skin-0-3 #flotten .beschreibung[title]:hover,body.skin-0-3 #flotten .beschreibung[titleAttribute]:hover
 	{ color:#70b080; }
+body.skin-0-3 #flotten .beschreibung[title]:hover,body.skin-0-3 #flotten .beschreibung[titleAttribute]:hover
+	{ color:#70b080; }
+
 body.skin-0-3 .type-weak a:hover,body.skin-0-3 .type-weak a:focus,body.skin-0-3 .type-em a:hover,body.skin-0-3 .type-em a:focus,body.skin-0-3 .type-empty a:hover,body.skin-0-3 .type-empty a:focus
 ,body.skin-0-3 #flotten .rueckflug .beschreibung:hover
-,body.skin-0-3 #flotten .rueckflug .beschreibung[title]:hover,body.skin-0-3 #flotten .rueckflug .beschreibung[titleAttribute]:hover
+	{ color:#353; }
+body.skin-0-3 #flotten .rueckflug .beschreibung[title]:hover,body.skin-0-3 #flotten .rueckflug .beschreibung[titleAttribute]:hover
 	{ color:#353; }
 
 
