@@ -99,7 +99,8 @@ body.skin-1-1 #content-9.mit-werbung,* html body.skin-1-1 #content-9 { margin-ri
 /* Headings */
 h1,h2 { margin:0; padding:.1em; border-bottom:.1em solid #aaa; text-align:center; background-color:#888; font-weight:bold; position:relative; }
 h1 { padding:.2em; border-bottom-width:.2em; }
-h3.strong,h4.strong { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; font-weight:bold; position:relative; line-height:inherit; }
+h3,h4 { font-weight:bold; }
+h3.strong,h4.strong { border-bottom:.1em solid #aaa; background-color:#888; margin:0; padding:.1em; text-align:center; position:relative; line-height:inherit; }
 
 /* Advertisments */
 #werbung { z-index:10000; position:absolute; top:3.5em; right:1em; width:120px; height:600px; }
