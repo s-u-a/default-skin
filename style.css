@@ -290,6 +290,7 @@ ul.deps { list-style-type:none; }
 
 /* Items (to build) */
 .item { border-color:#aaa; border-style:none; border-width:.1em; padding:.5em 0; text-align:left; clear:right; position:relative; }
+.item h3 { margin:0 0 .5em 0; line-height:2em; }
 * html .item { height:1%; }
 .item + .item { border-top-style:solid; }
 * html .item { border-top-style:solid; }
