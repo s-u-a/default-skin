@@ -44,7 +44,7 @@ body.skin-2-0 #ress dt.ress-radium { background-image:url(images/resources/radiu
 body.skin-2-0 #ress dt.ress-tritium { background-image:url(images/resources/tritium.png); }
 body.skin-2-0 #ress dt.ress-energie { background-image:url(images/resources/energie.png); }
 
-#body-root dl.bar dt,#body-root dl.bar dd { background-color:#777; color:#fff; font-weight:bold; border-width:.1em; border-color:#aaa;  }
+#body-root dl.bar dt,#body-root dl.bar dd { background-color:#777; color:#fff; font-weight:bold; border-width:.1em; border-color:#aaa; }
 #body-root dl.bar dt { margin:0 0 0 .25em; padding:.2em 0 .2em .3em; border-style:solid none solid solid; }
 * html #time dt { padding-right:.5em; }
 #body-root dl.bar dd { margin:0 .25em 0 0; padding:.2em .3em .2em 0; border-style:solid solid solid none; }
@@ -138,18 +138,19 @@ body.skin-2-0 .planet-20 #css-3 { background-image:url(images/planets_small/plan
 /* Definition lists */
 dl { border:.1em solid #aaa; border-top-style:none; width:70%; margin:.5em 15%; text-align:left; }
 * html dl,* html dt,* html dd { position:relative; }
-dt { width:30%; float:left; white-space:nowrap; padding:.2em .3em; font-weight:bold; position:relative; border-right:.1em solid #aaa; }
+dt { float:left; border-top:.1em solid #aaa; white-space:nowrap; padding:.2em .3em; font-weight:bold; position:relative; min-width:30%; }
 dt:after { content:":\a0"; word-spacing:-1.1em; }
-dd { margin:0; padding:.2em .3em .2em 32%; border-top:.1em solid #aaa; }
+* html dt { width:30%; }
+dd { margin-left:30%; padding:.2em .3em; border-left:.1em solid #aaa; border-top:.1em solid #aaa; }
 .item-list dt { width:60%; }
 .item-list dd { padding-left:62%; }
 
 dl.lines { margin:0; padding:0 .5em; width:auto; border-style:none; }
-dl.lines dt { width:auto; padding:0; font-weight:normal; border-style:none; }
+dl.lines dt { width:auto; min-width:0; padding:0; font-weight:normal; border-style:none; }
 dl.lines dd { padding:0; margin:auto; font-weight:bold; border-style:none; }
 
 dl.inline { margin:0; width:auto; border-style:none; }
-dl.inline dt,dl.inline dd { font-weight:normal; display:inline; float:none; width:auto; }
+dl.inline dt,dl.inline dd { font-weight:normal; display:inline; float:none; clear:none; width:auto; min-width:0; }
 dl.inline dd { font-weight:bold; white-space:nowrap; word-spacing:0; }
 dl.inline dd:after { content:",\a0"; font-weight:normal; }
 dl.inline dd.ress-last:after { content:"\0a"; white-space:pre; }
@@ -163,16 +164,14 @@ dl.player-list-actions ul { display:inline; list-style-type:none; }
 dl.player-list-actions ul li { display:inline; border-left:.1em solid #aaa; margin:0 0 0 .5ex; padding:0 0 0 .5ex; font-size:.9em; }
 
 dl.categories { border-left-style:none; border-right-style:none; margin:0; width:auto; }
-dl.categories dt { border-right-style:none; width:auto; }
+dl.categories dt { border-right-style:none; width:auto; min-width:0; clear:left; }
 dl.categories dt:after { content:"\a0"; }
-dl.categories dd { text-align:right; vertical-align:middle; padding-left:.3em; border-top-style:solid; }
+dl.categories dd { text-align:right; vertical-align:middle; margin:0; padding-left:.3em; border-left-style:none; border-top-style:solid; }
 dl.categories dd.foot { border-top:.1em solid #aaa; margin-top:.1em; }
-dl.categories dt + dd { border-top-style:none; }
-dl.categories dd + dt + dd { border-top-style:solid; }
 
 dl.form { width:auto; margin:.5em; border-style:none; }
-dl.form dt { border-right-style:none; text-align:right; }
-dl.form dd { border-top-style:none; }
+dl.form dt { border-style:none; text-align:right; }
+dl.form dd { border-style:none; }
 
 body.skin-4-1 #content-1 .ress dd.ress-negativ,body.skin-4-1 #content-1 .ress dd.ress-fehlend { color:#f00; }
 
@@ -384,7 +383,7 @@ ul.deps { list-style-type:none; }
 #planets { list-style-type:none; position:relative; min-height:10em; text-align:left; }
 * html #planets { height:10em; width:100%; text-align:center; }
 #planets .c-felder { display:none; }
-#planets dt { margin:0; padding:0; width:1.5ex; overflow:hidden; color:#777; line-height:1.2em; height:1.2em; border-style:none; }
+#planets dt { margin:0; padding:0; width:1.5ex; min-width:0; overflow:hidden; color:#777; line-height:1.2em; height:1.2em; border-style:none; }
 #planets dt:first-letter { color:#fff; }
 #planets dd { margin:0; padding:0; display:block; line-height:1.2em; border-style:none; }
 #planets dd:before { content:":\a0"; color:#fff; font-weight:bold; }
@@ -397,7 +396,7 @@ ul.deps { list-style-type:none; }
 #planets li.active > * { font-size:1.2em; }
 #planets li.active dl { margin:0; width:auto; text-align:center; }
 * html #planets li.active dl { width:1px; }
-#planets .active dt { display:inline; width:auto; float:none; clear:none; color:#fff; }
+#planets .active dt { display:inline; width:auto; min-width:0; float:none; clear:none; color:#fff; }
 #planets .active dt:after { content:":\a0"; }
 * html #planets .active dt { display:block; float:left; width:50%; text-align:right; margin:0; padding:0; }
 #planets .active dd { display:inline; }
@@ -466,8 +465,8 @@ body.skin-2-0 .planet-20 #planets .active,body.skin-2-0 #spionage-planet dl.plan
 
 /* Fleets */
 #flotten { margin:-.1em 0 0 0; padding:0; width:auto; border-style:none; }
-#flotten dt { margin:0; float:left; width:78%; border-top:.1em solid #aaa; border-bottom-style:none; border-right-style:none; padding:.5em 1%; text-align:left; font-weight:bold; position:relative; white-space:normal; }
-#flotten dd { margin:0; float:left; width:18%; border-top:.1em solid #aaa; border-bottom-style:none; padding:.5em 1%; text-align:center; position:relative; }
+#flotten dt { margin:0; float:left; width:78%; min-width:0; border-top:.1em solid #aaa; border-bottom-style:none; border-right-style:none; padding:.5em 1%; text-align:left; font-weight:bold; position:relative; white-space:normal; }
+#flotten dd { margin:0; float:left; width:18%; border-top:.1em solid #aaa; border-bottom-style:none; border-left-style:none; padding:.5em 1%; text-align:center; position:relative; }
 #flotten dt:after { content:""; }
 #flotten dt.eigen.hinflug { color:#0f0; }
 #flotten dt.eigen.rueckflug { color:#0b0; }
@@ -621,7 +620,6 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 button:hover
 ,body.skin-0-0 button:focus
 ,body.skin-0-0 button:active
-,body.skin-0-0 .tabs .active a
 	{ background-color:#000; }
 
 body.skin-0-0 .karte-system td.c-aktionen a
@@ -665,6 +663,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 #loading
 ,body.skin-0-0 .tabs a:hover
 ,body.skin-0-0 .tabs a:focus
+,body.skin-0-0 .tabs .active a
 ,body.skin-0-0 #navigation .separator
 	{ background-color:#0a0a0a; }
 
