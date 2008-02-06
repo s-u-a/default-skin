@@ -150,7 +150,7 @@ dl.lines dt { width:auto; min-width:0; padding:0; font-weight:normal; border-sty
 dl.lines dd { padding:0; margin:auto; font-weight:bold; border-style:none; }
 
 dl.inline { margin:0; width:auto; border-style:none; }
-dl.inline dt,dl.inline dd { font-weight:normal; display:inline; float:none; clear:none; width:auto; min-width:0; }
+dl.inline dt,dl.inline dd { font-weight:normal; display:inline; float:none; clear:none; width:auto; min-width:0; border-style:none; padding:0; margin:0; }
 dl.inline dd { font-weight:bold; white-space:nowrap; word-spacing:0; }
 dl.inline dd:after { content:",\a0"; font-weight:normal; }
 dl.inline dd.ress-last:after { content:"\0a"; white-space:pre; }
@@ -240,7 +240,7 @@ table,ul.whole-page,ol.whole-page { width:95%; border-spacing:0; border-collapse
 ul.whole-page,ol.whole-page { list-style-type:none; border-bottom-style:none; text-align:left; }
 thead { border-bottom:.2em solid #aaa; }
 tfoot { border-top:.2em solid #aaa; }
-thead tr,tr:hover,tr.active,.whole-page li:hover,.whole-page li.active { background-color:#888; }
+thead tr,tr:hover,tr.active,.whole-page li:hover,.whole-page li.active,fieldset.active { background-color:#888; }
 td,th { border:.1em solid #aaa; padding:.2em .3em; vertical-align:top; text-align:center; white-space:nowrap; }
 th { font-weight:bold; }
 tbody th,tfoot.gesamt th { text-align:left; }
@@ -352,6 +352,11 @@ ul.deps { list-style-type:none; }
 .max:before { content:"("; }
 .max:after { content:")"; }
 
+/* Captcha formular */
+form.captcha { text-align:center; padding:1em; }
+#recaptcha_area { margin:0 auto; }
+form.captcha iframe { width:100%; height:18em; border-style:none; }
+
 /*
   * Message types
 */
@@ -373,6 +378,7 @@ ul.deps { list-style-type:none; }
 
 #body-root .desc h4.strong { margin:.5em 0 .25em 0; }
 .desc-values ul { list-style-type:none; }
+
 
 /*
   * Index page
@@ -655,6 +661,7 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 thead tr
 ,body.skin-0-0 tr:hover
 ,body.skin-0-0 tr.active
+,body.skin-0-0 fieldset.active
 ,body.skin-0-0 .whole-page li:hover
 ,body.skin-0-0 .whole-page li.active
 ,body.skin-0-0 .deps thead
@@ -759,7 +766,7 @@ body.skin-0-1 #navigation .active a,body.skin-0-1  #navigation a:hover,body.skin
 ,body.skin-0-1 h1,body.skin-0-1 h2
 ,body.skin-0-1 h3.strong,body.skin-0-1 h4.strong
 ,body.skin-0-1 select,body.skin-0-1 input,body.skin-0-1 textarea,body.skin-0-1 button,body.skin-0-1 option,body.skin-0-1 optgroup
-,body.skin-0-1 thead tr,body.skin-0-1 tr:hover,body.skin-0-1 tr.active,body.skin-0-1 .whole-page li:hover,body.skin-0-1 .whole-page li.active
+,body.skin-0-1 thead tr,body.skin-0-1 tr:hover,body.skin-0-1 tr.active,body.skin-0-1 fieldset.active,body.skin-0-1 .whole-page li:hover,body.skin-0-1 .whole-page li.active
 ,body.skin-0-1 #js-title,body.skin-0-1 .popup,body.skin-0-1 #loading
 ,body.skin-0-1 .tabs a:hover,body.skin-0-1 .tabs a:focus
 	{ background-color:#568; }
@@ -826,7 +833,7 @@ body.skin-0-3 #navigation .active a,body.skin-0-3  #navigation a:hover,body.skin
 ,body.skin-0-3 h1,body.skin-0-3 h2
 ,body.skin-0-3 h3.strong,body.skin-0-3 h4.strong
 ,body.skin-0-3 select,body.skin-0-3 input,body.skin-0-3 textarea,body.skin-0-3 button,body.skin-0-3 option,body.skin-0-3 optgroup
-,body.skin-0-3 thead tr,body.skin-0-3 tr:hover,body.skin-0-3 tr.active,body.skin-0-3 .whole-page li:hover,body.skin-0-3 .whole-page li.active
+,body.skin-0-3 thead tr,body.skin-0-3 tr:hover,body.skin-0-3 tr.active,body.skin-0-3 fieldset.active,body.skin-0-3 .whole-page li:hover,body.skin-0-3 .whole-page li.active
 ,body.skin-0-3 #js-title,body.skin-0-3 .popup,body.skin-0-3 #loading
 ,body.skin-0-3 .tabs a:hover,body.skin-0-3 .tabs a:focus
 ,body.skin-0-3 .tabs .active a
