@@ -173,7 +173,7 @@ dl.form { width:auto; margin:.5em; border-style:none; }
 dl.form dt { border-style:none; text-align:right; }
 dl.form dd { border-style:none; }
 
-body.skin-4-1 #content-1 .ress dd.ress-negativ,body.skin-4-1 #content-1 .ress dd.ress-fehlend { color:#f00; }
+body.skin-4-1 #content-1 .ress dd.ress-negativ,body.skin-4-1 #content-1 .ress dd.ress-fehlend,body.skin-4-1 #content-1 .ress dd.speicher-voll { color:#f00; }
 
 /* Lists */
 ul.actions { list-style-type:none; font-weight:bold; }
