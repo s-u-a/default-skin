@@ -51,7 +51,7 @@ body.skin-2-0 #ress dt.ress-energie { background-image:url(images/resources/ener
 #body-root dl.bar dd:after { content:""; }
 
 /* Version information */
-#gameinfo { position:absolute; bottom:2.8em; left:.3em; margin:0; padding:0; list-style-type:none; }
+#gameinfo { position:absolute; bottom:1em; left:1em; margin:0; padding:0; list-style-type:none; }
 
 /* Navigation */
 #navigation { position:fixed; top:3.5em; left:1em; width:10em; border:.1em solid #888; background-color:#777; color:#fff; font-weight:bold; z-index:10000; }
@@ -240,7 +240,7 @@ table,ul.whole-page,ol.whole-page { width:95%; border-spacing:0; border-collapse
 ul.whole-page,ol.whole-page { list-style-type:none; border-bottom-style:none; text-align:left; }
 thead { border-bottom:.2em solid #aaa; }
 tfoot { border-top:.2em solid #aaa; }
-thead tr,tr:hover,tr.active,.whole-page li:hover,.whole-page li.active,fieldset.active { background-color:#888; }
+thead tr,tr:hover,tr.active,.whole-page li:hover,.whole-page li.active { background-color:#888; }
 td,th { border:.1em solid #aaa; padding:.2em .3em; vertical-align:top; text-align:center; white-space:nowrap; }
 th { font-weight:bold; }
 tbody th,tfoot.gesamt th { text-align:left; }
@@ -281,6 +281,8 @@ abbr,acronym { border-style:none; text-decoration:none; font-style:normal; lette
 #body-root input.number-ress { width:9ex; }
 
 ul.deps { list-style-type:none; }
+
+fieldset.active { border-width:.5em; }
 
 
 /*
@@ -605,6 +607,7 @@ body.skin-0-0 #content-13
 ,body.skin-0-0 option
 ,body.skin-0-0 optgroup
 ,body.skin-0-0 table
+,body.skin-0-0 .whole-page
 ,body.skin-0-0 .bar
 ,body.skin-0-0 #navigation
 ,body.skin-0-0 #css-3
@@ -661,7 +664,6 @@ body.skin-0-0 #navigation .active a
 ,body.skin-0-0 thead tr
 ,body.skin-0-0 tr:hover
 ,body.skin-0-0 tr.active
-,body.skin-0-0 fieldset.active
 ,body.skin-0-0 .whole-page li:hover
 ,body.skin-0-0 .whole-page li.active
 ,body.skin-0-0 .deps thead
@@ -766,7 +768,7 @@ body.skin-0-1 #navigation .active a,body.skin-0-1  #navigation a:hover,body.skin
 ,body.skin-0-1 h1,body.skin-0-1 h2
 ,body.skin-0-1 h3.strong,body.skin-0-1 h4.strong
 ,body.skin-0-1 select,body.skin-0-1 input,body.skin-0-1 textarea,body.skin-0-1 button,body.skin-0-1 option,body.skin-0-1 optgroup
-,body.skin-0-1 thead tr,body.skin-0-1 tr:hover,body.skin-0-1 tr.active,body.skin-0-1 fieldset.active,body.skin-0-1 .whole-page li:hover,body.skin-0-1 .whole-page li.active
+,body.skin-0-1 thead tr,body.skin-0-1 tr:hover,body.skin-0-1 tr.active,body.skin-0-1 .whole-page li:hover,body.skin-0-1 .whole-page li.active
 ,body.skin-0-1 #js-title,body.skin-0-1 .popup,body.skin-0-1 #loading
 ,body.skin-0-1 .tabs a:hover,body.skin-0-1 .tabs a:focus
 	{ background-color:#568; }
@@ -833,7 +835,7 @@ body.skin-0-3 #navigation .active a,body.skin-0-3  #navigation a:hover,body.skin
 ,body.skin-0-3 h1,body.skin-0-3 h2
 ,body.skin-0-3 h3.strong,body.skin-0-3 h4.strong
 ,body.skin-0-3 select,body.skin-0-3 input,body.skin-0-3 textarea,body.skin-0-3 button,body.skin-0-3 option,body.skin-0-3 optgroup
-,body.skin-0-3 thead tr,body.skin-0-3 tr:hover,body.skin-0-3 tr.active,body.skin-0-3 fieldset.active,body.skin-0-3 .whole-page li:hover,body.skin-0-3 .whole-page li.active
+,body.skin-0-3 thead tr,body.skin-0-3 tr:hover,body.skin-0-3 tr.active,body.skin-0-3 .whole-page li:hover,body.skin-0-3 .whole-page li.active
 ,body.skin-0-3 #js-title,body.skin-0-3 .popup,body.skin-0-3 #loading
 ,body.skin-0-3 .tabs a:hover,body.skin-0-3 .tabs a:focus
 ,body.skin-0-3 .tabs .active a
