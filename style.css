@@ -261,10 +261,10 @@ table.table-small { width:auto; }
 /* Others */
 
 p { text-align:justify; margin:.5em; }
-.error,.successful,.nothingtodo { font-weight:bold; text-align:center; font-size:1.2em; }
+.error,.successful,.nothingtodo,.infobox { font-weight:bold; text-align:center; font-size:1.2em; }
 .error { color:#f00; }
 #body-root .successful { color:#0f0; }
-#body-root .nothingtodo { color:#8bf; }
+#body-root .nothingtodo,#body-root .infobox { color:#8bf; }
 #neue-nachrichten { font-weight:bold; text-align:center; }
 
 hr { height:0; padding:0; border-style:solid none none none; border-width:.2em; border-color:#aaa; font-size:1em; }
