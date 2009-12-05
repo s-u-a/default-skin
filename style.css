@@ -556,8 +556,9 @@ body.skin-2-0 .planet-20 #planets .active,body.skin-2-0 #spionage-planet dl.plan
 .highscores { width:50%; font-weight:bold; }
 .highscores tbody td { text-align:left; }
 .highscores-modi { height:5em; }
-.highscores-modi li { width:49.5%; }
-.highscores-modi li.c-spieler-gebaeude,.highscores-modi li.c-spieler-forschung,.highscores-modi li.c-spieler-roboter,.highscores-modi li.c-spieler-schiffe,.highscores-modi li.c-spieler-verteidigung { width:19.5%; white-space:nowrap; }
+.highscores-mode li { width:24.5%; white-space:nowrap; }
+.highscores-modi li.c-spieler,.highscores-modi li.c-allianzen-schnitt,.highscores-modi li.c-allianzen-summe { width:33%; }
+
 
 /*
   * Messages
