@@ -110,6 +110,7 @@ h3.strong,h4.strong { border-bottom:.1em solid #aaa; background-color:#888; marg
 #css-3 { display:none; }
 body.skin-2-0 #css-3 { position:fixed; top:.7em; right:.7em; height:50px; width:50px; z-index:30000; border:.1em solid #aaa; padding:.5em; background-position:center center; background-repeat:no-repeat; background-color:#222; display:block; }
 * html body.skin-2-0 #css-3 { position:absolute; margin-right:17px; }
+body.skin-2-0 #css-3:hover { opacity:0.3; -moz-opacity:0.3; -khtml-opacity:0.3; filter:alpha(opacity=30); }
 body.skin-2-0 .planet-1 #css-3 { background-image:url(images/planets_small/planet01.png); }
 body.skin-2-0 .planet-2 #css-3 { background-image:url(images/planets_small/planet02.png); }
 body.skin-2-0 .planet-3 #css-3 { background-image:url(images/planets_small/planet03.png); }
