@@ -3,18 +3,18 @@ html { font-size:1em; color:#fff; font-style:normal; }
 * html h1,* html h2,* html h3,* html h4 { font-size:100.01%; }
 * html *,* html #planets .active dt { font-size:11px; font-family:sans-serif; }
 
-#time { bottom:0; text-align:right; display:block; margin:0; border-top:.2em solid #aaa; padding:.2em; background-color:#222; word-spacing:-1.1em; line-height:2em; height:2em; white-space:nowrap; z-index:20000; width:auto; }
+#time { bottom:0; text-align:right; display:block; margin:0; border-top:.2em solid #aaa; padding:.2em; background-color:#222; word-spacing:-1ex; line-height:2em; height:2em; white-space:nowrap; z-index:20000; width:auto; }
 * html #time { word-spacing:0; }
-#time dt { margin:0 0 0 .25em; padding:.2em 0 .2em .3em; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid none solid solid; font-family:monospace; width:auto; float:none; }
+#time dt { margin:0 0 0 .25em; padding:.2em 0 .2em .3em; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid none solid solid; font-family:monospace; width:auto; float:none; word-spacing:0; }
 * html #time dt { padding-right:.5em; }
 #time dt:after { content:":\a0"; }
-#time dd { margin:0 .25em 0 0; padding:.2em .3em .2em 0; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid solid solid none; font-family:monospace; }
+#time dd { margin:0 .25em 0 0; padding:.2em .3em .2em 0; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid solid solid none; font-family:monospace; word-spacing:0; }
 
-#ress { left:0; right:0; top:0; display:block; margin:0; border-bottom:.2em solid #aaa; padding:.2em; background-color:#222; word-spacing:-1.1em; line-height:2em; height:2em; white-space:nowrap; z-index:25000; width:100%; }
+#ress { left:0; right:0; top:0; display:block; margin:0; border-bottom:.2em solid #aaa; padding:.2em; background-color:#222; word-spacing:-1ex; line-height:2em; height:2em; white-space:nowrap; z-index:25000; width:100%; }
 * html #ress { border-right:.2em solid #aaa; word-spacing:0; }
-#ress dt { margin:0 0 0 .25em; padding:.2em 0 .2em .3em; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid none solid solid; white-space:nowrap; width:auto; float:none; }
+#ress dt { margin:0 0 0 .25em; padding:.2em 0 .2em .3em; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid none solid solid; white-space:nowrap; width:auto; float:none; word-spacing:0; }
 #ress dt:after { content:":\a0"; }
-#ress dd { margin:0 .25em 0 0; padding:.2em .3em .2em 0; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid solid solid none; white-space:nowrap; }
+#ress dd { margin:0 .25em 0 0; padding:.2em .3em .2em 0; display:inline; background-color:#777; color:#fff; font-weight:700; border-width:.1em; border-color:#aaa; border-style:solid solid solid none; white-space:nowrap; word-spacing:0; }
 .ress dd { word-spacing:0; }
 
 body { background-color:#222; margin:1em; }
@@ -126,8 +126,9 @@ p { margin:.5em; }
 .item h3 .stufe { font-weight:400; }
 .item dl,.item dt,.item dd,.item-info,.item-info dl,.item-info dt,.item-info dd { font-weight:400; margin:0; padding:0; width:auto; float:none; border-style:none; }
 * html .item dl,* html .item dt,* html .item dd { position:relative; }
-.item .ress dt,.item .ress dd,.item-info .ress dt,.item-info .ress dd { display:inline; }
-.item .ress dt:after,.item-info .ress dt:after { content:":\a0"; word-spacing:-1.1em; }
+.item .ress { word-spacing: -1ex; }
+.item .ress dt,.item .ress dd,.item-info .ress dt,.item-info .ress dd { display:inline; word-spacing: 0; }
+.item .ress dt:after,.item-info .ress dt:after { content:":\a0"; }
 .item .ress dd,.item-info .ress dd { font-weight:700; white-space:nowrap; }
 .item .ress dd:after,.item-info .ress dd:after { content:",\a0"; font-weight:400; }
 .item .ress dd.ress-radium:after,.item-info .ress dd.ress-radium:after { content:"\a0"; }
